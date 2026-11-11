@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AfD-Dossier</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">§</div>
+        <div>
+          <div class="brand-title">AfD-Dossier</div>
+          <div class="brand-sub">Behauptung · Beleg · Bewertung</div>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Abschnitte"></nav>
+
+      <div class="sidebar-foot">
+        <div class="progress-label">
+          <span>Gelesen</span>
+          <span id="progressText">0 / 0</span>
+        </div>
+        <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+        <div class="stand">Stand: <span id="standText"></span></div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Navigation einblenden">☰</button>
+        <div class="search-wrap">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Alle Einträge durchsuchen – Behauptung, Beleg, Quelle" autocomplete="off" spellcheck="false" />
+          <kbd>Strg F</kbd>
+          <button class="search-clear" id="searchClear" aria-label="Suche leeren" hidden>×</button>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" id="themeBtn" aria-label="Hell/Dunkel umschalten" title="Hell/Dunkel umschalten">◐</button>
+          <button class="btn" id="printBtn" title="Drucken oder als PDF speichern (Strg+P)">Drucken / PDF</button>
+        </div>
+      </header>
+
+      <div class="view" id="view" role="main"></div>
+
+      <footer class="foot">
+        <p>
+          Ein parteilich positioniertes Dossier, das jede Aussage mit Quelle versieht – auch die, die der eigenen Position widerspricht.
+          Bewertungen sind als <span class="chip chip-einordnung">Einordnung</span> markiert.
+        </p>
+        <p class="foot-small">Links öffnen sich im Systembrowser. Keine Datenverbindung aus der App heraus.</p>
+      </footer>
+    </div>
+  </div>
+
+  <noscript>Diese App benötigt JavaScript.</noscript>
+
+  <script src="data/sources.js"></script>
+  <script src="data/meta.js"></script>
+  <script src="data/vorwuerfe-a.js"></script>
+  <script src="data/vorwuerfe-b.js"></script>
+  <script src="data/vorwuerfe-c.js"></script>
+  <script src="data/mitglieder.js"></script>
+  <script src="data/demokratie.js"></script>
+  <script src="data/hitler.js"></script>
+  <script src="data/vorwuerfe-d.js"></script>
+  <script src="data/vorwuerfe-e.js"></script>
+  <script src="data/vorwuerfe-f.js"></script>
+  <script src="data/gegenargumente-a.js"></script>
+  <script src="data/gegenargumente-b.js"></script>
+  <script src="data/gegenargumente-c.js"></script>
+  <script src="data/afd-argumente.js"></script>
+  <script src="data/parole-begriffe.js"></script>
+  <script src="data/medien-weidel.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

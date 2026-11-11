@@ -1,0 +1,36 @@
+{
+  "name": "afd-dossier",
+  "version": "1.0.0",
+  "description": "AfD-Dossier: quellenbasiertes Nachschlagewerk und Gesprächsleitfaden (Windows-Desktop-App)",
+  "main": "src/main.js",
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "smoke": "electron . --smoke",
+    "dist": "electron-builder --win --dir",
+    "dist:installer": "electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "de.dossier.afd",
+    "productName": "AfD-Dossier",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "dir"
+      ],
+      "artifactName": "AfD-Dossier-${version}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "^45.3.0",
+    "electron-builder": "^26.18.0"
+  }
+}
