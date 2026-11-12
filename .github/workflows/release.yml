@@ -56,7 +56,7 @@ jobs:
           fi
           gh release view "$TAG" >/dev/null 2>&1 \
             || gh release create "$TAG" \
-                 --title "AfD-Dossier ${TAG#v} (Windows)" \
+                 --title "AfD-Dossier ${TAG#v}" \
                  --generate-notes
           gh release upload "$TAG" "$ARTIFACT" --clobber
 

@@ -1,4 +1,4 @@
-# AfD-Dossier – Windows-Desktop-App
+# AfD-Dossier – Windows- und Android-App
 
 Ein quellenbasiertes Nachschlagewerk für politische Gespräche über die AfD. Jeder Eintrag trennt
 **Behauptung**, **Beleglage** und **Bewertung** und nennt Quelle, Datum und Link.
