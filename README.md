@@ -7,9 +7,10 @@ Aktueller Stand: **69 Einträge**, **155 Quellen**, neun Abschnitte.
 
 ## Herunterladen
 
-Fertige Windows-Builds liegen unter [Releases](../../releases):
+Fertige Builds liegen unter [Releases](../../releases):
 
-- `AfD-Dossier-<version>.exe` – Installer (NSIS), installiert die App im Benutzerprofil.
+- `AfD-Dossier-<version>.exe` – Windows-Installer (NSIS), installiert die App im Benutzerprofil.
+- `AfD-Dossier-<version>.apk` – Android-App (ab Android 7.0). Installation aus unbekannten Quellen erlauben; die App braucht keine Netzwerkberechtigung.
 - Portable Variante: das Archiv mit `AfD-Dossier.exe` ohne Installation starten.
 
 Die Builds sind nicht code-signiert. Windows zeigt beim ersten Start deshalb den SmartScreen-Hinweis
@@ -30,8 +31,24 @@ npm run dist            # portable Anwendung: dist/win-unpacked/AfD-Dossier.exe
 npm run dist:installer  # Installer: dist/AfD-Dossier-<version>.exe
 ```
 
-Ein Tag `v*` löst den Workflow `.github/workflows/release.yml` aus: Er baut den Installer auf
-`windows-latest`, setzt die Version aus dem Tag und hängt das Artefakt an das Release.
+Ein Tag `v*` löst den Workflow `.github/workflows/release.yml` aus: Er baut den Windows-Installer und
+die Android-APK, setzt die Version aus dem Tag und hängt beide Artefakte an das Release.
+
+### Android-APK bauen
+
+Voraussetzungen: JDK 17 oder neuer sowie ein Android-SDK mit Plattform 35 und Build-Tools 35.0.0.
+
+```bash
+cd android
+./gradlew assembleRelease -PdossierVersion=1.0.0 -PdossierVersionCode=1
+# Ergebnis: app/build/outputs/apk/release/app-release.apk
+```
+
+Ohne `android/keystore/dossier-release.jks` signiert der Build mit dem Debug-Schlüssel. Für die
+Release-Signatur die Umgebungsvariablen `DOSSIER_KEYSTORE`, `DOSSIER_KEYSTORE_PASSWORD`,
+`DOSSIER_KEY_ALIAS` und `DOSSIER_KEY_PASSWORD` setzen; im CI kommen Schlüssel und Passwort aus
+den Repository-Secrets. Die Web-Oberfläche wird beim Build aus `src/` in die App-Assets kopiert –
+es gibt nur eine Inhaltsquelle für Windows und Android.
 
 ## Bedienung
 
@@ -75,6 +92,9 @@ src/
     afd-argumente.js   Argumente von AfD-Anhängern, belegt eingeordnet
     parole-begriffe.js  NS-Vokabular, Urteile, Begriffsklärungen
     medien-weidel.js   Fernsehinterviews, Fachbegriffe, Pressestrategie
+android/
+  app/src/main/      Android-Hülle (WebView, Manifest, Theme, Icons)
+  app/src/main/java  MainActivity: liefert src/ offline aus, öffnet Quellen im Browser
 ```
 
 ## Inhaltlicher Grundsatz

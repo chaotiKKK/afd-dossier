@@ -519,6 +519,12 @@
 
   el.menuBtn.addEventListener('click', () => el.sidebar.classList.toggle('open'));
 
+  // Auf schmalen Bildschirmen liegt die Navigation als Schublade über dem Inhalt:
+  // nach der Auswahl wieder schließen (Desktop bleibt unberührt, da nie offen).
+  el.nav.addEventListener('click', (ev) => {
+    if (ev.target.closest('a[href^="#/"]')) el.sidebar.classList.remove('open');
+  });
+
   document.addEventListener('keydown', (ev) => {
     const inField = /^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName);
     if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 'f') {

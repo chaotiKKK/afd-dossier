@@ -59,3 +59,74 @@ jobs:
                  --title "AfD-Dossier ${TAG#v} (Windows)" \
                  --generate-notes
           gh release upload "$TAG" "$ARTIFACT" --clobber
+
+  android:
+    # Läuft nach dem Windows-Job, damit das Release bereits existiert.
+    needs: installer
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Java einrichten
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: gradle
+
+      - name: Android-SDK-Pakete installieren
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
+          SDKMANAGER="$SDK/cmdline-tools/latest/bin/sdkmanager"
+          [ -x "$SDKMANAGER" ] || SDKMANAGER="$(command -v sdkmanager)"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          yes | "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0" >/dev/null
+
+      - name: Signaturschlüssel bereitstellen
+        shell: bash
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          set -euo pipefail
+          mkdir -p android/keystore
+          if [ -n "${KEYSTORE_BASE64:-}" ]; then
+            printf '%s' "$KEYSTORE_BASE64" | base64 --decode > android/keystore/dossier-release.jks
+            echo "Signaturschlüssel aus dem Secret geladen."
+          else
+            echo "Kein Keystore-Secret gesetzt – der Build nutzt die Debug-Signatur."
+          fi
+
+      - name: APK bauen
+        shell: bash
+        working-directory: android
+        env:
+          DOSSIER_KEYSTORE: keystore/dossier-release.jks
+          DOSSIER_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          DOSSIER_KEY_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          DOSSIER_KEY_ALIAS: dossier
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleRelease \
+            -PdossierVersion="${TAG#v}" \
+            -PdossierVersionCode="${{ github.run_number }}"
+
+      - name: APK ans Release hängen
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          APK="dist/AfD-Dossier-${TAG#v}.apk"
+          cp android/app/build/outputs/apk/release/app-release.apk "$APK"
+          ls -lh "$APK"
+          gh release view "$TAG" >/dev/null 2>&1 \
+            || gh release create "$TAG" --title "AfD-Dossier ${TAG#v}" --generate-notes
+          gh release upload "$TAG" "$APK" --clobber
