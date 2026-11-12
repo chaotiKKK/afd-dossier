@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
 }
 
-val dossierVersion = (project.findProperty("dossierVersion") as String?) ?: "1.1.0"
+val dossierVersion = (project.findProperty("dossierVersion") as String?) ?: "1.2.0"
 val dossierVersionCode = ((project.findProperty("dossierVersionCode") as String?) ?: "1").toInt()
 
 android {

@@ -162,8 +162,19 @@ function classify(originalUrl, chain) {
   if (last.status >= 500) {
     return { ...base, verdict: 'server', message: 'Antwort ' + last.status + ' – Serverfehler' };
   }
+  if (last.status === 400) {
+    return {
+      ...base,
+      verdict: 'blocked',
+      message: 'Antwort 400 – Zugriffs- oder Cookie-Schutz, im Browser prüfbar'
+    };
+  }
   if (last.status >= 300 && last.status < 400) {
-    return { ...base, verdict: 'other', message: 'Antwort ' + last.status + ' ohne gültiges Ziel' };
+    return {
+      ...base,
+      verdict: 'blocked',
+      message: 'Weiterleitung ohne Ziel – Bot- oder Consent-Schutz'
+    };
   }
   return { ...base, verdict: 'other', message: 'unerwartete Antwort ' + last.status };
 }

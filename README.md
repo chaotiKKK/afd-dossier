@@ -12,7 +12,7 @@ Fertige Builds liegen unter [Releases](../../releases):
 - `AfD-Dossier-<version>.exe` – Windows-Installer (NSIS), installiert die App im Benutzerprofil.
 - Portable Variante: das Archiv mit `AfD-Dossier.exe` ohne Installation starten.
 - `AfD-Dossier-<version>.apk` – Android-App mit dem vollständigen Dossier (ab Android 7.0).
-- `AfD-Check-<version>.apk` – eigenständige Android-Check-App: 32 Behauptungen, vier Kategorien, je datierte Quellen.
+- `AfD-Check-<version>.apk` – eigenständige Android-Check-App: 76 Behauptungen in 13 Themenfeldern, vier Kategorien, je datierte Quellen.
 
 Beide Android-Apps brauchen keine Netzwerkberechtigung; Installation aus unbekannten Quellen erlauben.
 
@@ -20,13 +20,14 @@ Beide Android-Apps brauchen keine Netzwerkberechtigung; Installation aus unbekan
 
 | Datei | SHA-256 |
 | --- | --- |
+| `AfD-Check-1.2.0.apk` | `7385b6f34f33458c146a697449adb6626cd22d3f91ceb47f90b122a9847b19d3` |
 | `AfD-Check-1.1.0.apk` | `f120c120a0f848c7cafdf3bc982ce1fc7a0a57970cb202d10ba5e6a59a882402` |
 | `AfD-Check-1.0.0.apk` | `b291322d64625edb22f4490b2b0f4429a64f0e13697eab5fd625066c6092ec33` |
 | `AfD-Dossier-1.0.0.apk` | `5b0f3c97bebae773891e242b6fbce2c05a9d77e66ce298fa51d3b0f9608e4eae` |
 | `AfD-Dossier-1.0.0.exe` | `05d84f07820034d08a48c20d9b3ac37ca2e9e4ec6acb7c5188efaaf8b5b3849b` |
 
 Prüfen mit `sha256sum <datei>` (Linux/macOS) oder `Get-FileHash <datei> -Algorithm SHA256` (Windows).
-Die Werte gelten für die Dateien in den Releases `afd-check-1.1.0`, `afd-check-1.0.0` und `v1.0.0`.
+Die Werte gelten für die Dateien in den Releases `afd-check-1.2.0`, `afd-check-1.1.0`, `afd-check-1.0.0` und `v1.0.0`.
 
 Die Builds sind nicht code-signiert. Windows zeigt beim ersten Start deshalb den SmartScreen-Hinweis
 („Weitere Informationen“ → „Trotzdem ausführen“). Die App enthält keine Netzwerkverbindung außer den
@@ -75,12 +76,14 @@ es gibt nur eine Inhaltsquelle für Windows und Android.
 npm run check:sources
 ```
 
-Prüft alle Quellen der Check-App (85 Angaben, 51 eindeutige URLs): echte HTTP-Anfrage mit
+Prüft alle Quellen der Check-App (287 Angaben, 148 eindeutige URLs): echte HTTP-Anfrage mit
 Browser-Kennung, manuell verfolgte Weiterleitungen, Bewertung als erreichbar, weitergeleitet,
 Zugriff verweigert, gedrosselt, fehlt oder Server-/Netzwerkfehler. Ergebnis ist
 `reports/quellen-check.md` (Tabelle je Thema, Weiterleitungsketten, Auffälligkeiten) und
 `reports/quellen-check.json`. Exit-Code 1 bei fehlenden Quellen oder Server-/Netzwerkfehlern;
-403/429 gelten als Warnung, weil das meist Bot-Schutz ist.
+403, 400 und 302 ohne Ziel gelten als Warnung, weil das Bot-, Cookie- oder Consent-Schutz ist.
+Datumsangaben werden unverändert aus dem Register übernommen – wo dort nur ein Jahr oder
+„laufend“ steht (etwa bei Gesetzestexten), steht das auch in der App.
 
 Zusätzlich wird der HTML-Text jeder erreichbaren Quelle geladen und mit den Schlüsselbegriffen
 aus Quellentitel und Behauptung abgeglichen. Der Bericht nennt Trefferzahl und fehlende Begriffe
