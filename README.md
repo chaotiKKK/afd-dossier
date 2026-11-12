@@ -10,11 +10,22 @@ Aktueller Stand: **69 Einträge**, **155 Quellen**, neun Abschnitte.
 Fertige Builds liegen unter [Releases](../../releases):
 
 - `AfD-Dossier-<version>.exe` – Windows-Installer (NSIS), installiert die App im Benutzerprofil.
+- Portable Variante: das Archiv mit `AfD-Dossier.exe` ohne Installation starten.
 - `AfD-Dossier-<version>.apk` – Android-App mit dem vollständigen Dossier (ab Android 7.0).
 - `AfD-Check-<version>.apk` – eigenständige Android-Check-App: 22 Behauptungen, vier Kategorien, je datierte Quellen.
 
-Beide Apps brauchen keine Netzwerkberechtigung; Installation aus unbekannten Quellen erlauben.
-- Portable Variante: das Archiv mit `AfD-Dossier.exe` ohne Installation starten.
+Beide Android-Apps brauchen keine Netzwerkberechtigung; Installation aus unbekannten Quellen erlauben.
+
+### Prüfsummen (SHA-256)
+
+| Datei | SHA-256 |
+| --- | --- |
+| `AfD-Check-1.0.0.apk` | `b291322d64625edb22f4490b2b0f4429a64f0e13697eab5fd625066c6092ec33` |
+| `AfD-Dossier-1.0.0.apk` | `5b0f3c97bebae773891e242b6fbce2c05a9d77e66ce298fa51d3b0f9608e4eae` |
+| `AfD-Dossier-1.0.0.exe` | `65f77cb518c6be9ae26d2d4f5c35f1d2e736d6ed6a558d806506f1b466f0748b` |
+
+Prüfen mit `sha256sum <datei>` (Linux/macOS) oder `Get-FileHash <datei> -Algorithm SHA256` (Windows).
+Die Werte gelten für die Dateien im Release `afd-check-1.0.0` bzw. `v1.0.0`.
 
 Die Builds sind nicht code-signiert. Windows zeigt beim ersten Start deshalb den SmartScreen-Hinweis
 („Weitere Informationen“ → „Trotzdem ausführen“). Die App enthält keine Netzwerkverbindung außer den
