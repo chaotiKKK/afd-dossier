@@ -30,6 +30,9 @@ npm run dist            # portable Anwendung: dist/win-unpacked/AfD-Dossier.exe
 npm run dist:installer  # Installer: dist/AfD-Dossier-<version>.exe
 ```
 
+Ein Tag `v*` löst den Workflow `.github/workflows/release.yml` aus: Er baut den Installer auf
+`windows-latest`, setzt die Version aus dem Tag und hängt das Artefakt an das Release.
+
 ## Bedienung
 
 - **Navigation** links: Start, Die größten Vorwürfe, Migrationsdeutsche in der AfD,
