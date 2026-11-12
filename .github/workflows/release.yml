@@ -83,8 +83,11 @@ jobs:
           SDK="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
           SDKMANAGER="$SDK/cmdline-tools/latest/bin/sdkmanager"
           [ -x "$SDKMANAGER" ] || SDKMANAGER="$(command -v sdkmanager)"
+          # `yes` endet mit SIGPIPE, sobald sdkmanager fertig ist – pipefail dafür abschalten.
+          set +o pipefail
           yes | "$SDKMANAGER" --licenses >/dev/null || true
           yes | "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0" >/dev/null
+          set -o pipefail
 
       - name: Signaturschlüssel bereitstellen
         shell: bash
