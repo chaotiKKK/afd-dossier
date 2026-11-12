@@ -10,7 +10,8 @@
     "start": "electron .",
     "smoke": "electron . --smoke",
     "dist": "electron-builder --win --dir",
-    "dist:installer": "electron-builder --win nsis"
+    "dist:installer": "electron-builder --win nsis",
+    "check:sources": "node tools/check-sources.mjs"
   },
   "build": {
     "appId": "de.dossier.afd",

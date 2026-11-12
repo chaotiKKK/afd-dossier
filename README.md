@@ -66,6 +66,22 @@ Release-Signatur die Umgebungsvariablen `DOSSIER_KEYSTORE`, `DOSSIER_KEYSTORE_PA
 den Repository-Secrets. Die Web-Oberfläche wird beim Build aus `src/` in die App-Assets kopiert –
 es gibt nur eine Inhaltsquelle für Windows und Android.
 
+## Quellen prüfen
+
+```bash
+npm run check:sources
+```
+
+Prüft alle Quellen der Check-App (57 Angaben, 42 eindeutige URLs): echte HTTP-Anfrage mit
+Browser-Kennung, manuell verfolgte Weiterleitungen, Bewertung als erreichbar, weitergeleitet,
+Zugriff verweigert, gedrosselt, fehlt oder Server-/Netzwerkfehler. Ergebnis ist
+`reports/quellen-check.md` (Tabelle je Thema, Weiterleitungsketten, Auffälligkeiten) und
+`reports/quellen-check.json`. Exit-Code 1 bei fehlenden Quellen oder Server-/Netzwerkfehlern;
+403/429 gelten als Warnung, weil das meist Bot-Schutz ist.
+
+Die Prüfung ist eine Momentaufnahme: Bot-Schutz kann beim nächsten Lauf anders antworten, und
+ein Status 200 belegt die Erreichbarkeit der Adresse, nicht ihren Inhalt.
+
 ## Bedienung
 
 - **Navigation** links: Start, Die größten Vorwürfe, Migrationsdeutsche in der AfD,
