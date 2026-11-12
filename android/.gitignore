@@ -1,7 +1,7 @@
 build/
 .gradle/
 local.properties
-app/src/main/assets/
+**/src/main/assets/
 keystore/
 *.keystore
 *.jks

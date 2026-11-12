@@ -10,7 +10,10 @@ Aktueller Stand: **69 Einträge**, **155 Quellen**, neun Abschnitte.
 Fertige Builds liegen unter [Releases](../../releases):
 
 - `AfD-Dossier-<version>.exe` – Windows-Installer (NSIS), installiert die App im Benutzerprofil.
-- `AfD-Dossier-<version>.apk` – Android-App (ab Android 7.0). Installation aus unbekannten Quellen erlauben; die App braucht keine Netzwerkberechtigung.
+- `AfD-Dossier-<version>.apk` – Android-App mit dem vollständigen Dossier (ab Android 7.0).
+- `AfD-Check-<version>.apk` – eigenständige Android-Check-App: 22 Behauptungen, vier Kategorien, je datierte Quellen.
+
+Beide Apps brauchen keine Netzwerkberechtigung; Installation aus unbekannten Quellen erlauben.
 - Portable Variante: das Archiv mit `AfD-Dossier.exe` ohne Installation starten.
 
 Die Builds sind nicht code-signiert. Windows zeigt beim ersten Start deshalb den SmartScreen-Hinweis
@@ -40,8 +43,10 @@ Voraussetzungen: JDK 17 oder neuer sowie ein Android-SDK mit Plattform 35 und Bu
 
 ```bash
 cd android
-./gradlew assembleRelease -PdossierVersion=1.0.0 -PdossierVersionCode=1
+./gradlew :app:assembleRelease   -PdossierVersion=1.0.0 -PdossierVersionCode=1  # vollständiges Dossier
+./gradlew :check:assembleRelease -PdossierVersion=1.0.0 -PdossierVersionCode=1  # AfD-Check
 # Ergebnis: app/build/outputs/apk/release/app-release.apk
+#           check/build/outputs/apk/release/check-release.apk
 ```
 
 Ohne `android/keystore/dossier-release.jks` signiert der Build mit dem Debug-Schlüssel. Für die
@@ -92,9 +97,13 @@ src/
     afd-argumente.js   Argumente von AfD-Anhängern, belegt eingeordnet
     parole-begriffe.js  NS-Vokabular, Urteile, Begriffsklärungen
     medien-weidel.js   Fernsehinterviews, Fachbegriffe, Pressestrategie
+afd-check/
+  www/               AfD-Check-Oberfläche (HTML/CSS/JS, offline)
+  www/data/          Einträge mit Behauptung, Kategorie, Begründung, Quellen
 android/
-  app/src/main/      Android-Hülle (WebView, Manifest, Theme, Icons)
+  app/src/main/      Android-Hülle des Dossiers (WebView, Manifest, Theme, Icons)
   app/src/main/java  MainActivity: liefert src/ offline aus, öffnet Quellen im Browser
+  check/src/main/    Android-Hülle der Check-App (Assets aus afd-check/www)
 ```
 
 ## Inhaltlicher Grundsatz

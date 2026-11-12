@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AfD-Dossier"
 include(":app")
+include(":check")
