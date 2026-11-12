@@ -81,8 +81,13 @@ Zugriff verweigert, gedrosselt, fehlt oder Server-/Netzwerkfehler. Ergebnis ist
 `reports/quellen-check.json`. Exit-Code 1 bei fehlenden Quellen oder Server-/Netzwerkfehlern;
 403/429 gelten als Warnung, weil das meist Bot-Schutz ist.
 
-Die Prüfung ist eine Momentaufnahme: Bot-Schutz kann beim nächsten Lauf anders antworten, und
-ein Status 200 belegt die Erreichbarkeit der Adresse, nicht ihren Inhalt.
+Zusätzlich wird der HTML-Text jeder erreichbaren Quelle geladen und mit den Schlüsselbegriffen
+aus Quellentitel und Behauptung abgeglichen. Der Bericht nennt Trefferzahl und fehlende Begriffe
+und meldet, wenn eine Quelle die zitierten Begriffe gar nicht mehr enthält. Der Abgleich ist ein
+Hinweis, kein Beweis: PDFs, Bezahlschranken und Bot-Schutz bleiben außen vor, und Quellen nennen
+Personen mitunter anders („der thüringische AfD-Fraktionsvorsitzende“ statt „Höcke“).
+
+Die Prüfung ist eine Momentaufnahme: Bot-Schutz kann beim nächsten Lauf anders antworten.
 
 ## Bedienung
 

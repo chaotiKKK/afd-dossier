@@ -53,6 +53,8 @@ function collectSources(data) {
           topicTitle: topic.title,
           entryId: entry.id,
           category: entry.category,
+          claim: entry.claim,
+          nuance: entry.nuance || '',
           index,
           title: source.title,
           publisher: source.publisher,
@@ -67,7 +69,7 @@ function collectSources(data) {
 
 const sleep = (ms) => new Promise((done) => setTimeout(done, ms));
 
-async function requestOnce(url, variant) {
+async function requestOnce(url, variant, options = {}) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
   const headers = {
@@ -86,6 +88,19 @@ async function requestOnce(url, variant) {
       contentType: response.headers.get('content-type'),
       contentLength: response.headers.get('content-length')
     };
+    if (options.body) {
+      const length = Number(response.headers.get('content-length') || 0);
+      if (length > 6_000_000) {
+        try {
+          if (response.body) await response.body.cancel();
+        } catch {
+          /* egal */
+        }
+        return { ...result, text: null, tooLarge: true };
+      }
+      const text = await response.text();
+      return { ...result, text: text.slice(0, 900_000), textBytes: text.length };
+    }
     try {
       if (response.body) await response.body.cancel();
     } catch {
@@ -126,7 +141,7 @@ function classify(originalUrl, chain) {
   const finalUrl = last.url;
   const redirected = chain.length > 1;
   const hostChanged = new URL(finalUrl).host !== new URL(originalUrl).host;
-  const base = { http: last.status, finalUrl, chain, hostChanged, redirected };
+  const base = { http: last.status, finalUrl, chain, hostChanged, redirected, contentType: last.contentType || null };
 
   if (last.status >= 200 && last.status < 300) {
     return { ...base, verdict: redirected ? 'redirect' : 'ok' };
@@ -172,7 +187,12 @@ async function probe(url) {
         message: describeError(error)
       };
     }
-    chain.push({ url: current, status: result.status, location: result.location || null });
+    chain.push({
+      url: current,
+      status: result.status,
+      location: result.location || null,
+      contentType: result.contentType || null
+    });
 
     if (result.status >= 300 && result.status < 400 && result.location) {
       let next;
@@ -214,6 +234,144 @@ async function pool(items, size, worker) {
   });
   await Promise.all(runners);
   return results;
+}
+
+const STOPWORDS = new Set(
+  ('aber alle allem allen aller alles als also am an andere anderen auch auf aus bei beim bin bis bist da damit dann der den des dem die das dass dazu dein deine denn denen der deren dessen dich dies diese diesem diesen dieser dieses dir doch dort du durch ein eine einem einen einer eines einige er es etwas euch euer fuer gegen gewesen hab habe haben hat hatte hatten hier hin hinter ich im in indem ins ist jede jedem jeden jeder jedes jene jetzt kann kein keine koennen koennte machen man manche mein meine mit muss musste nach nicht nichts noch nun nur ob oder ohne sehr sein seine seinem seinen seiner seit selbst sich sie sind so solche soll sollte sondern sonst ueber um und uns unsere unter viel vom von vor war waren warst was weil weiter welche welchem welchen welcher welches wenn werde werden wie wieder will wir wird wirst wo wollen wollte worden wuerde wuerden zwar zwischen').split(
+    ' '
+  )
+);
+
+function fold(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss');
+}
+
+const ENTITIES = {
+  amp: '&',
+  quot: '"',
+  apos: "'",
+  lt: '<',
+  gt: '>',
+  nbsp: ' ',
+  auml: 'ä',
+  ouml: 'ö',
+  uuml: 'ü',
+  szlig: 'ß',
+  ndash: '–',
+  mdash: '—',
+  hellip: '…',
+  euro: '€',
+  sect: '§'
+};
+
+function decodeEntities(value) {
+  return value
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
+    .replace(/&([a-z]+);/gi, (match, name) => ENTITIES[name.toLowerCase()] ?? match);
+}
+
+function htmlToText(html) {
+  const withoutNoise = html
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, ' ');
+  return fold(decodeEntities(withoutNoise.replace(/<[^>]+>/g, ' ')))
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+async function fetchPageText(url) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
+  try {
+    const response = await fetch(url, {
+      redirect: 'follow',
+      signal: controller.signal,
+      headers: {
+        'user-agent': UA_DESKTOP,
+        accept: 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5',
+        'accept-language': 'de-DE,de;q=0.9,en;q=0.8'
+      }
+    });
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    const type = response.headers.get('content-type') || '';
+    if (!/text\/html/i.test(type)) throw new Error('kein HTML (' + (type || 'unbekannt') + ')');
+    const html = await response.text();
+    return { text: htmlToText(html.slice(0, 1_500_000)), bytes: html.length };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/**
+ * Schlüsselbegriffe aus Quellentitel und Behauptung. Titel zuerst, weil er beschreibt,
+ * was die Quelle ist; die Behauptung liefert die inhaltlichen Anker.
+ */
+function keywordsFor(row) {
+  const seen = new Set();
+  const chosen = [];
+
+  const add = (value, limit) => {
+    let added = 0;
+    for (const raw of String(value || '').split(/[^\p{L}\p{N}]+/u)) {
+      const folded = fold(raw).replace(/[^a-z0-9]/g, '');
+      if (folded.length < 5 || STOPWORDS.has(folded) || seen.has(folded)) continue;
+      seen.add(folded);
+      chosen.push({ raw, folded, prefix: folded.slice(0, Math.min(6, folded.length)) });
+      added += 1;
+      if (added >= limit) break;
+    }
+  };
+
+  add(row.title, 6);
+  add(row.claim, 6);
+  return chosen.slice(0, 10);
+}
+
+function checkContent(row, text) {
+  const keywords = keywordsFor(row);
+  if (!text) return { checked: false, reason: 'kein Text geladen' };
+  if (!keywords.length) return { checked: false, reason: 'keine Schlüsselbegriffe' };
+
+  const found = [];
+  const missing = [];
+  for (const keyword of keywords) {
+    if (text.includes(keyword.prefix)) found.push(keyword.raw);
+    else missing.push(keyword.raw);
+  }
+  const ratio = found.length / keywords.length;
+  // „ohne Treffer“ nur, wenn wirklich kein einziger Begriff vorkommt: Quellen nennen
+  // Personen oft anders („der thüringische AfD-Fraktionsvorsitzende“ statt „Höcke“).
+  const verdict = ratio >= 0.6 ? 'ok' : found.length > 0 ? 'partial' : 'missing';
+  return {
+    checked: true,
+    verdict,
+    ratio: Math.round(ratio * 100) / 100,
+    found: found.length,
+    total: keywords.length,
+    missing: missing.slice(0, 8),
+    matched: found.slice(0, 8)
+  };
+}
+
+function judgeContent(row, result, text) {
+  if (!result) return { checked: false, reason: 'nicht geprüft' };
+  if (result.contentError) return { checked: false, reason: result.contentError };
+  if (result.verdict !== 'ok' && result.verdict !== 'redirect') {
+    return { checked: false, reason: LABELS[result.verdict] || result.verdict };
+  }
+  if (!/text\/html/i.test(result.contentType || '')) {
+    return { checked: false, reason: 'kein HTML (PDF oder Datei)' };
+  }
+  if (!text) return { checked: false, reason: 'kein Text geladen' };
+  return checkContent(row, text);
 }
 
 const LABELS = {
@@ -266,6 +424,52 @@ function renderMarkdown(data, rows, unique, results, stamp) {
     lines.push('| ' + label + ' | ' + byVerdict[key] + ' |');
   });
   lines.push('');
+
+  const contentCounts = { ok: 0, partial: 0, missing: 0, unchecked: 0 };
+  rows.forEach((row) => {
+    if (row.content && row.content.checked) contentCounts[row.content.verdict] += 1;
+    else contentCounts.unchecked += 1;
+  });
+
+  lines.push('## Stichwortprüfung');
+  lines.push('');
+  lines.push(
+    'Zusätzlich wurde der HTML-Text jeder erreichbaren Quelle nachgeladen und geprüft, ob die Schlüsselbegriffe aus Quellentitel und Behauptung dort noch vorkommen. Das ist ein Hinweis, kein Beweis: Formulierungen ändern sich, Quellen nennen Personen mitunter anders (etwa „der thüringische AfD-Fraktionsvorsitzende“ statt „Höcke“), und PDFs, Bezahlschranken oder Bot-Schutz lassen sich so nicht prüfen.'
+  );
+  lines.push('');
+  lines.push('| Stichwörter im Seitentext | Quellen |');
+  lines.push('| --- | ---: |');
+  lines.push('| überwiegend gefunden (ab 60 %) | ' + contentCounts.ok + ' |');
+  lines.push('| teilweise gefunden (unter 60 %) | ' + contentCounts.partial + ' |');
+  lines.push('| kein einziger Begriff gefunden | ' + contentCounts.missing + ' |');
+  lines.push('| nicht prüfbar (PDF, Sperre, Fehler) | ' + contentCounts.unchecked + ' |');
+  lines.push('');
+
+  const contentIssues = rows.filter(
+    (row) => row.content && row.content.checked && row.content.verdict !== 'ok'
+  );
+  if (contentIssues.length) {
+    lines.push('Quellen, in denen die zitierten Begriffe ganz oder teilweise fehlen:');
+    lines.push('');
+    lines.push('| Quelle | Eintrag | Treffer | fehlende Begriffe |');
+    lines.push('| --- | --- | ---: | --- |');
+    contentIssues.forEach((row) => {
+      lines.push(
+        '| ' +
+          mdEscape(row.title) +
+          ' | ' +
+          mdEscape(row.entryId) +
+          ' | ' +
+          row.content.found +
+          '/' +
+          row.content.total +
+          ' | ' +
+          mdEscape((row.content.missing || []).join(', ') || '–') +
+          ' |'
+      );
+    });
+    lines.push('');
+  }
 
   const redirects = results.filter((result) => result.redirected && result.verdict !== 'error');
   lines.push('## Weiterleitungen (' + redirects.length + ')');
@@ -322,8 +526,8 @@ function renderMarkdown(data, rows, unique, results, stamp) {
 
   lines.push('## Alle Quellen');
   lines.push('');
-  lines.push('| Thema | Eintrag | Quelle | Herausgeber · Datum | HTTP | Ergebnis |');
-  lines.push('| --- | --- | --- | --- | ---: | --- |');
+  lines.push('| Thema | Eintrag | Quelle | Herausgeber · Datum | HTTP | Ergebnis | Stichwörter |');
+  lines.push('| --- | --- | --- | --- | ---: | --- | ---: |');
   rows.forEach((row) => {
     const result = resultFor.get(row.url);
     lines.push(
@@ -339,6 +543,8 @@ function renderMarkdown(data, rows, unique, results, stamp) {
         (result ? result.http || '–' : '–') +
         ' | ' +
         (result ? LABELS[result.verdict] : 'nicht geprüft') +
+        ' | ' +
+        (row.content && row.content.checked ? row.content.found + '/' + row.content.total : '–') +
         ' |'
     );
   });
@@ -381,11 +587,32 @@ async function main() {
       new Set(unique.map(hostOf)).size + ' Hosts) …'
   );
 
+  const pageTexts = new Map();
   const results = await pool(unique, CONCURRENCY, async (url) => {
     const result = await probe(url);
+
+    // Für die Stichwortprüfung den HTML-Text der erreichbaren Seite nachladen.
+    if (
+      (result.verdict === 'ok' || result.verdict === 'redirect') &&
+      /text\/html/i.test(result.contentType || '')
+    ) {
+      try {
+        const page = await fetchPageText(result.finalUrl);
+        pageTexts.set(url, page.text);
+        result.textBytes = page.bytes;
+      } catch (error) {
+        result.contentError = describeError(error);
+      }
+    }
+
     const status = result.http || '–';
     console.log(String(status).padStart(3, ' ') + '  ' + LABELS[result.verdict].padEnd(24, ' ') + ' ' + url);
     return result;
+  });
+
+  const resultsByUrl = new Map(results.map((result) => [result.url, result]));
+  rows.forEach((row) => {
+    row.content = judgeContent(row, resultsByUrl.get(row.url), pageTexts.get(row.url));
   });
 
   const stamp = new Date().toLocaleString('de-DE', {
@@ -414,8 +641,25 @@ async function main() {
   writeFileSync(join(OUT_DIR, 'quellen-check.json'), JSON.stringify(report, null, 2) + '\n', 'utf8');
   writeFileSync(join(OUT_DIR, 'quellen-check.md'), renderMarkdown(data, rows, unique, results, stamp), 'utf8');
 
+  const contentCounts = { ok: 0, partial: 0, missing: 0, unchecked: 0 };
+  rows.forEach((row) => {
+    if (row.content && row.content.checked) contentCounts[row.content.verdict] += 1;
+    else contentCounts.unchecked += 1;
+  });
+
   console.log('');
   console.log('Ergebnis: ' + summarize(rows, results));
+  console.log(
+    'Stichwörter: ' +
+      contentCounts.ok +
+      ' vollständig · ' +
+      contentCounts.partial +
+      ' teilweise · ' +
+      contentCounts.missing +
+      ' ohne Treffer · ' +
+      contentCounts.unchecked +
+      ' nicht prüfbar'
+  );
   console.log('Bericht:  reports/quellen-check.md');
   console.log('Rohdaten: reports/quellen-check.json');
 

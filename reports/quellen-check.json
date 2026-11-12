@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-12T10:18:09.516Z",
-  "generatedAtLocal": "12. November 2026 um 11:18",
+  "generatedAt": "2026-11-12T10:34:46.242Z",
+  "generatedAtLocal": "12. November 2026 um 11:34",
   "totals": {
     "references": 57,
     "uniqueUrls": 42,
@@ -17,627 +17,1644 @@
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-einstufung",
       "category": "belegt",
+      "claim": "„Das Bundesamt für Verfassungsschutz hat die AfD als gesichert rechtsextremistische Bestrebung eingestuft.“",
+      "nuance": "Die Einstufung sagt nichts über einzelne Wähler. Der Vollzug der Einstufung ist derzeit ausgesetzt; die behördliche Bewertung selbst bleibt davon unberührt.",
       "index": 0,
       "title": "AfD laut Verfassungsschutz gesichert rechtsextremistisch",
       "publisher": "Deutsche Welle",
       "date": "02.05.2025",
-      "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368"
+      "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 7,
+        "total": 7,
+        "missing": [],
+        "matched": [
+          "Verfassungsschutz",
+          "gesichert",
+          "rechtsextremistisch",
+          "Bundesamt",
+          "rechtsextremistische",
+          "Bestrebung",
+          "eingestuft"
+        ]
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-einstufung",
       "category": "belegt",
+      "claim": "„Das Bundesamt für Verfassungsschutz hat die AfD als gesichert rechtsextremistische Bestrebung eingestuft.“",
+      "nuance": "Die Einstufung sagt nichts über einzelne Wähler. Der Vollzug der Einstufung ist derzeit ausgesetzt; die behördliche Bewertung selbst bleibt davon unberührt.",
       "index": 1,
       "title": "Medien veröffentlichen Verfassungsschutz-Gutachten zur AfD",
       "publisher": "tagesschau.de",
       "date": "14.05.2025",
-      "url": "https://www.tagesschau.de/inland/afd-medien-publizieren-verfassungsschutz-gutachten-100.html"
+      "url": "https://www.tagesschau.de/inland/afd-medien-publizieren-verfassungsschutz-gutachten-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 9,
+        "total": 9,
+        "missing": [],
+        "matched": [
+          "Medien",
+          "veröffentlichen",
+          "Verfassungsschutz",
+          "Gutachten",
+          "Bundesamt",
+          "gesichert",
+          "rechtsextremistische",
+          "Bestrebung"
+        ]
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-rechtskraft",
       "category": "widerlegt",
+      "claim": "„Die Einstufung der AfD als gesichert rechtsextremistisch ist rechtskräftig.“",
+      "nuance": "Wer „rechtskräftig“ sagt, verwechselt zwei verschiedene Einstufungen mit unterschiedlichem Verfahrensstand.",
       "index": 0,
       "title": "Keine Zulassung der Revision zur Einstufung als „Verdachtsfall“ (BVerwG 6 B 23.24)",
       "publisher": "Bundesverwaltungsgericht",
       "date": "22.07.2025",
-      "url": "https://www.bverwg.de/pm/2025/54"
+      "url": "https://www.bverwg.de/pm/2025/54",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 8,
+        "total": 8,
+        "missing": [],
+        "matched": [
+          "Zulassung",
+          "Revision",
+          "Einstufung",
+          "Verdachtsfall",
+          "BVerwG",
+          "gesichert",
+          "rechtsextremistisch",
+          "rechtskräftig"
+        ]
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-rechtskraft",
       "category": "widerlegt",
+      "claim": "„Die Einstufung der AfD als gesichert rechtsextremistisch ist rechtskräftig.“",
+      "nuance": "Wer „rechtskräftig“ sagt, verwechselt zwei verschiedene Einstufungen mit unterschiedlichem Verfahrensstand.",
       "index": 1,
       "title": "„Stillhaltezusage“ im AfD-Eilverfahren (Az. 13 L 1109/25)",
       "publisher": "Verwaltungsgericht Köln",
       "date": "08.05.2025",
-      "url": "https://www.vg-koeln.nrw.de/behoerde/presse/Pressemitteilungen/Archiv/2025/05_08052025/"
+      "url": "https://www.vg-koeln.nrw.de/behoerde/presse/Pressemitteilungen/Archiv/2025/05_08052025/",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 6,
+        "total": 6,
+        "missing": [],
+        "matched": [
+          "Stillhaltezusage",
+          "Eilverfahren",
+          "Einstufung",
+          "gesichert",
+          "rechtsextremistisch",
+          "rechtskräftig"
+        ]
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-rechtskraft",
       "category": "widerlegt",
+      "claim": "„Die Einstufung der AfD als gesichert rechtsextremistisch ist rechtskräftig.“",
+      "nuance": "Wer „rechtskräftig“ sagt, verwechselt zwei verschiedene Einstufungen mit unterschiedlichem Verfahrensstand.",
       "index": 2,
       "title": "Gerichte: Ab wann gilt die Partei als „gesichert rechtsextremistisch“?",
       "publisher": "CORRECTIV",
       "date": "05.03.2026",
-      "url": "https://correctiv.org/aktuelles/afd/2026/03/05/justiz-ab-wann-ist-die-afd-gesichert-rechtsextrem/"
+      "url": "https://correctiv.org/aktuelles/afd/2026/03/05/justiz-ab-wann-ist-die-afd-gesichert-rechtsextrem/",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 6,
+        "total": 6,
+        "missing": [],
+        "matched": [
+          "Gerichte",
+          "Partei",
+          "gesichert",
+          "rechtsextremistisch",
+          "Einstufung",
+          "rechtskräftig"
+        ]
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-laender",
       "category": "widerlegt",
+      "claim": "„Die AfD ist in allen Bundesländern als gesichert rechtsextremistisch eingestuft.“",
+      "nuance": "",
       "index": 0,
       "title": "Wie stuft der Verfassungsschutz die AfD in den Bundesländern ein?",
       "publisher": "CORRECTIV",
       "date": "17.06.2026",
-      "url": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein"
+      "url": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 6,
+        "total": 6,
+        "missing": [],
+        "matched": [
+          "stuft",
+          "Verfassungsschutz",
+          "Bundesländern",
+          "gesichert",
+          "rechtsextremistisch",
+          "eingestuft"
+        ]
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-laender",
       "category": "widerlegt",
+      "claim": "„Die AfD ist in allen Bundesländern als gesichert rechtsextremistisch eingestuft.“",
+      "nuance": "",
       "index": 1,
       "title": "Sächsischer AfD-Landesverband als gesichert rechtsextremistische Bestrebung eingestuft",
       "publisher": "Landesamt für Verfassungsschutz Sachsen",
       "date": "08.12.2023",
-      "url": "https://www.medienservice.sachsen.de/medien/news/1071656/download_pdf"
+      "url": "https://www.medienservice.sachsen.de/medien/news/1071656/download_pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-laender",
       "category": "widerlegt",
+      "claim": "„Die AfD ist in allen Bundesländern als gesichert rechtsextremistisch eingestuft.“",
+      "nuance": "",
       "index": 2,
       "title": "Beschwerde des AfD-Landesverbands Sachsen erfolglos (SächsOVG 3 B 127/24)",
       "publisher": "Sächsisches Oberverwaltungsgericht",
       "date": "21.01.2025",
-      "url": "https://www.medienservice.sachsen.de/medien/news/1083988/download_pdf"
+      "url": "https://www.medienservice.sachsen.de/medien/news/1083988/download_pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-verbot",
       "category": "widerlegt",
+      "claim": "„Die AfD ist inzwischen verboten.“",
+      "nuance": "",
       "index": 0,
       "title": "Grundgesetz, Artikel 21 (Parteien)",
       "publisher": "Bundesministerium der Justiz",
       "date": "24.05.1949, Fassung laufend",
-      "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      "url": "https://www.gesetze-im-internet.de/gg/art_21.html",
+      "content": {
+        "checked": true,
+        "verdict": "partial",
+        "ratio": 0.4,
+        "found": 2,
+        "total": 5,
+        "missing": [
+          "Artikel",
+          "inzwischen",
+          "verboten"
+        ],
+        "matched": [
+          "Grundgesetz",
+          "Parteien"
+        ]
+      }
     },
     {
       "topicId": "verfassungsschutz",
       "topicTitle": "Verfassungsschutz & Extremismus",
       "entryId": "vs-verbot",
       "category": "widerlegt",
+      "claim": "„Die AfD ist inzwischen verboten.“",
+      "nuance": "",
       "index": 1,
       "title": "Nach Wahlsieg: Wie liefe ein AfD-Verbotsverfahren?",
       "publisher": "WDR",
       "date": "08.09.2026",
-      "url": "https://www1.wdr.de/politik/afd-ablauf-parteiverbotsverfahren-100.html"
+      "url": "https://www1.wdr.de/politik/afd-ablauf-parteiverbotsverfahren-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.8,
+        "found": 4,
+        "total": 5,
+        "missing": [
+          "inzwischen"
+        ],
+        "matched": [
+          "Wahlsieg",
+          "liefe",
+          "Verbotsverfahren",
+          "verboten"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "ns-vergleich",
       "category": "nicht-belegt",
+      "claim": "„Die AfD ist der neue Hitler.“ / „Die AfD ist eine Nazi-Partei.“",
+      "nuance": "Der Vergleich erklärt nichts und verschiebt das Gespräch von prüfbaren Fakten zu einer Wertung. Wer ihn nutzt, sollte ihn als Wertung kennzeichnen – nicht als Feststellung.",
       "index": 0,
       "title": "Verurteilungen Höckes wegen Verwendens von Kennzeichen verfassungswidriger Organisationen rechtskräftig",
       "publisher": "Bundesgerichtshof",
       "date": "11.09.2025",
-      "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html"
+      "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.75,
+        "found": 6,
+        "total": 8,
+        "missing": [
+          "Höckes",
+          "Hitler"
+        ],
+        "matched": [
+          "Verurteilungen",
+          "wegen",
+          "Verwendens",
+          "Kennzeichen",
+          "verfassungswidriger",
+          "Partei"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "ns-vergleich",
       "category": "nicht-belegt",
+      "claim": "„Die AfD ist der neue Hitler.“ / „Die AfD ist eine Nazi-Partei.“",
+      "nuance": "Der Vergleich erklärt nichts und verschiebt das Gespräch von prüfbaren Fakten zu einer Wertung. Wer ihn nutzt, sollte ihn als Wertung kennzeichnen – nicht als Feststellung.",
       "index": 1,
       "title": "Die Höcke-Rede von Dresden in Wortlaut-Auszügen",
       "publisher": "DIE ZEIT / dpa",
       "date": "18.01.2017",
-      "url": "https://www.zeit.de/news/2017-01/18/parteien-die-hoecke-rede-von-dresden-in-wortlaut-auszuegen-18171207"
+      "url": "https://www.zeit.de/news/2017-01/18/parteien-die-hoecke-rede-von-dresden-in-wortlaut-auszuegen-18171207",
+      "content": {
+        "checked": false,
+        "reason": "Zugriff verweigert"
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "ns-vergleich",
       "category": "nicht-belegt",
+      "claim": "„Die AfD ist der neue Hitler.“ / „Die AfD ist eine Nazi-Partei.“",
+      "nuance": "Der Vergleich erklärt nichts und verschiebt das Gespräch von prüfbaren Fakten zu einer Wertung. Wer ihn nutzt, sollte ihn als Wertung kennzeichnen – nicht als Feststellung.",
       "index": 2,
       "title": "Zentralrat der Juden empört über Rede des AfD-Politikers",
       "publisher": "DER SPIEGEL",
       "date": "18.01.2017",
-      "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-zentralrat-der-juden-ist-empoert-ueber-rede-des-afd-politikers-a-1130520.html"
+      "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-zentralrat-der-juden-ist-empoert-ueber-rede-des-afd-politikers-a-1130520.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.83,
+        "found": 5,
+        "total": 6,
+        "missing": [
+          "Hitler"
+        ],
+        "matched": [
+          "Zentralrat",
+          "Juden",
+          "empört",
+          "Politikers",
+          "Partei"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "hoecke-urteil",
       "category": "belegt",
+      "claim": "„Björn Höcke ist wegen der Verwendung einer NS-Parole rechtskräftig verurteilt.“",
+      "nuance": "",
       "index": 0,
       "title": "Verurteilungen des thüringischen AfD-Fraktionsvorsitzenden rechtskräftig (3 StR 484/24, 3 StR 519/24)",
       "publisher": "Bundesgerichtshof",
       "date": "11.09.2025",
-      "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html"
+      "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.8,
+        "found": 8,
+        "total": 10,
+        "missing": [
+          "Björn",
+          "Höcke"
+        ],
+        "matched": [
+          "Verurteilungen",
+          "thüringischen",
+          "Fraktionsvorsitzenden",
+          "rechtskräftig",
+          "wegen",
+          "Verwendung",
+          "Parole",
+          "verurteilt"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "hoecke-urteil",
       "category": "belegt",
+      "claim": "„Björn Höcke ist wegen der Verwendung einer NS-Parole rechtskräftig verurteilt.“",
+      "nuance": "",
       "index": 1,
       "title": "BGH: Urteile gegen Höcke wegen NS-Parole rechtskräftig",
       "publisher": "tagesschau.de",
       "date": "11.09.2025",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/urteil-bestaetigung-hoecke-100.html"
+      "url": "https://www.tagesschau.de/inland/innenpolitik/urteil-bestaetigung-hoecke-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 8,
+        "total": 8,
+        "missing": [],
+        "matched": [
+          "Urteile",
+          "Höcke",
+          "wegen",
+          "Parole",
+          "rechtskräftig",
+          "Björn",
+          "Verwendung",
+          "verurteilt"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "hoecke-freispruch",
       "category": "widerlegt",
+      "claim": "„Höcke wurde von den Vorwürfen freigesprochen.“",
+      "nuance": "",
       "index": 0,
       "title": "Verurteilungen Höckes rechtskräftig (3 StR 484/24, 3 StR 519/24)",
       "publisher": "Bundesgerichtshof",
       "date": "11.09.2025",
-      "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html"
+      "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html",
+      "content": {
+        "checked": true,
+        "verdict": "partial",
+        "ratio": 0.29,
+        "found": 2,
+        "total": 7,
+        "missing": [
+          "Höckes",
+          "Höcke",
+          "wurde",
+          "Vorwürfen",
+          "freigesprochen"
+        ],
+        "matched": [
+          "Verurteilungen",
+          "rechtskräftig"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "hoecke-freispruch",
       "category": "widerlegt",
+      "claim": "„Höcke wurde von den Vorwürfen freigesprochen.“",
+      "nuance": "",
       "index": 1,
       "title": "BGH: Urteile gegen Höcke wegen NS-Parole rechtskräftig",
       "publisher": "tagesschau.de",
       "date": "11.09.2025",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/urteil-bestaetigung-hoecke-100.html"
+      "url": "https://www.tagesschau.de/inland/innenpolitik/urteil-bestaetigung-hoecke-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.63,
+        "found": 5,
+        "total": 8,
+        "missing": [
+          "wurde",
+          "Vorwürfen",
+          "freigesprochen"
+        ],
+        "matched": [
+          "Urteile",
+          "Höcke",
+          "wegen",
+          "Parole",
+          "rechtskräftig"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "hoecke-freispruch",
       "category": "widerlegt",
+      "claim": "„Höcke wurde von den Vorwürfen freigesprochen.“",
+      "nuance": "",
       "index": 2,
       "title": "Ermittlungen gegen Höcke eingestellt",
       "publisher": "Deutsche Welle",
       "date": "01.03.2017",
-      "url": "https://www.dw.com/de/ermittlungen-gegen-afd-mann-h%C3%B6cke-eingestellt/a-37772192"
+      "url": "https://www.dw.com/de/ermittlungen-gegen-afd-mann-h%C3%B6cke-eingestellt/a-37772192",
+      "content": {
+        "checked": true,
+        "verdict": "partial",
+        "ratio": 0.5,
+        "found": 3,
+        "total": 6,
+        "missing": [
+          "wurde",
+          "Vorwürfen",
+          "freigesprochen"
+        ],
+        "matched": [
+          "Ermittlungen",
+          "Höcke",
+          "eingestellt"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "programm-demokratie",
       "category": "umstritten",
+      "claim": "„Die AfD will die Demokratie abschaffen.“",
+      "nuance": "Für die Behauptung braucht es mehr als Wahlteilnahme, dagegen mehr als eine Behördenbewertung.",
       "index": 0,
       "title": "Zeit für Deutschland – Programm zur Wahl zum 21. Deutschen Bundestag",
       "publisher": "AfD-Bundesverband",
       "date": "12.01.2025",
-      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf"
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "programm-demokratie",
       "category": "umstritten",
+      "claim": "„Die AfD will die Demokratie abschaffen.“",
+      "nuance": "Für die Behauptung braucht es mehr als Wahlteilnahme, dagegen mehr als eine Behördenbewertung.",
       "index": 1,
       "title": "AfD laut Verfassungsschutz gesichert rechtsextremistisch",
       "publisher": "Deutsche Welle",
       "date": "02.05.2025",
-      "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368"
+      "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.8,
+        "found": 4,
+        "total": 5,
+        "missing": [
+          "abschaffen"
+        ],
+        "matched": [
+          "Verfassungsschutz",
+          "gesichert",
+          "rechtsextremistisch",
+          "Demokratie"
+        ]
+      }
     },
     {
       "topicId": "ns-bezuege",
       "topicTitle": "Hitler-Vergleich & NS-Bezüge",
       "entryId": "programm-demokratie",
       "category": "umstritten",
+      "claim": "„Die AfD will die Demokratie abschaffen.“",
+      "nuance": "Für die Behauptung braucht es mehr als Wahlteilnahme, dagegen mehr als eine Behördenbewertung.",
       "index": 2,
       "title": "Grundgesetz, Artikel 21 (Parteien)",
       "publisher": "Bundesministerium der Justiz",
       "date": "24.05.1949, Fassung laufend",
-      "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      "url": "https://www.gesetze-im-internet.de/gg/art_21.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.6,
+        "found": 3,
+        "total": 5,
+        "missing": [
+          "Artikel",
+          "abschaffen"
+        ],
+        "matched": [
+          "Grundgesetz",
+          "Parteien",
+          "Demokratie"
+        ]
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "keine-migranten",
       "category": "widerlegt",
+      "claim": "„In der AfD sind keine Migrationsdeutschen.“",
+      "nuance": "Die Zahl beschreibt Abgeordnete, nicht Mitglieder oder Wähler. Über die Zusammensetzung der Mitgliedschaft gibt es keine amtliche Erhebung nach Herkunft.",
       "index": 0,
       "title": "73 Abgeordnete mit Migrationshintergrund",
       "publisher": "Mediendienst Integration",
       "date": "27.02.2025",
-      "url": "https://mediendienst-integration.de/artikel/73-abgeordnete-mit-migrationshintergrund.html"
+      "url": "https://mediendienst-integration.de/artikel/73-abgeordnete-mit-migrationshintergrund.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 3,
+        "total": 3,
+        "missing": [],
+        "matched": [
+          "Abgeordnete",
+          "Migrationshintergrund",
+          "Migrationsdeutschen"
+        ]
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "keine-migranten",
       "category": "widerlegt",
+      "claim": "„In der AfD sind keine Migrationsdeutschen.“",
+      "nuance": "Die Zahl beschreibt Abgeordnete, nicht Mitglieder oder Wähler. Über die Zusammensetzung der Mitgliedschaft gibt es keine amtliche Erhebung nach Herkunft.",
       "index": 1,
       "title": "Abgeordneten-Statistik: Der neue Bundestag in Zahlen",
       "publisher": "Deutscher Bundestag",
       "date": "24.02.2025",
-      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw09-wahlergebnis-statistik-1055550"
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw09-wahlergebnis-statistik-1055550",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.8,
+        "found": 4,
+        "total": 5,
+        "missing": [
+          "Migrationsdeutschen"
+        ],
+        "matched": [
+          "Abgeordneten",
+          "Statistik",
+          "Bundestag",
+          "Zahlen"
+        ]
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "keine-migranten",
       "category": "widerlegt",
+      "claim": "„In der AfD sind keine Migrationsdeutschen.“",
+      "nuance": "Die Zahl beschreibt Abgeordnete, nicht Mitglieder oder Wähler. Über die Zusammensetzung der Mitgliedschaft gibt es keine amtliche Erhebung nach Herkunft.",
       "index": 2,
       "title": "Migrantische AfD-Wähler wollen weniger Zuwanderung",
       "publisher": "SRF",
       "date": "15.02.2025",
-      "url": "https://www.srf.ch/news/international/deutschland-wahlen-2025/bundestagswahlen-2025-migrantische-afd-waehler-wollen-weniger-zuwanderung"
+      "url": "https://www.srf.ch/news/international/deutschland-wahlen-2025/bundestagswahlen-2025-migrantische-afd-waehler-wollen-weniger-zuwanderung",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 5,
+        "total": 5,
+        "missing": [],
+        "matched": [
+          "Migrantische",
+          "Wähler",
+          "weniger",
+          "Zuwanderung",
+          "Migrationsdeutschen"
+        ]
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "waehler-nazis",
       "category": "nicht-belegt",
+      "claim": "„Alle AfD-Wähler sind Nazis.“",
+      "nuance": "",
       "index": 0,
       "title": "Bundestagswahl 2025: Endgültiges Ergebnis",
       "publisher": "Die Bundeswahlleiterin",
       "date": "14.03.2025",
-      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html"
+      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.8,
+        "found": 4,
+        "total": 5,
+        "missing": [
+          "Nazis"
+        ],
+        "matched": [
+          "Bundestagswahl",
+          "Endgültiges",
+          "Ergebnis",
+          "Wähler"
+        ]
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "waehler-nazis",
       "category": "nicht-belegt",
+      "claim": "„Alle AfD-Wähler sind Nazis.“",
+      "nuance": "",
       "index": 1,
       "title": "Wahlergebnisse und Wählerschaft der AfD",
       "publisher": "Bundeszentrale für politische Bildung",
       "date": "16.05.2026",
-      "url": "https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/"
+      "url": "https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.75,
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "Nazis"
+        ],
+        "matched": [
+          "Wahlergebnisse",
+          "Wählerschaft",
+          "Wähler"
+        ]
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "waehler-nazis",
       "category": "nicht-belegt",
+      "claim": "„Alle AfD-Wähler sind Nazis.“",
+      "nuance": "",
       "index": 2,
       "title": "Migrantisch, deutsch, AfD-Wähler",
       "publisher": "Der Tagesspiegel",
       "date": "02.07.2026",
-      "url": "https://www.tagesspiegel.de/berlin/migrantisch-deutsch-afd-wahler-wir-stehen-immer-noch-auf-einer-stufe-mit-fluchtlingen-15748778.html"
+      "url": "https://www.tagesspiegel.de/berlin/migrantisch-deutsch-afd-wahler-wir-stehen-immer-noch-auf-einer-stufe-mit-fluchtlingen-15748778.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.75,
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "Nazis"
+        ],
+        "matched": [
+          "Migrantisch",
+          "deutsch",
+          "Wähler"
+        ]
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "alle-abschieben",
       "category": "umstritten",
+      "claim": "„Die AfD will alle Ausländer abschieben.“",
+      "nuance": "Die Formel „alle Ausländer“ ist zu weit; die Formel „nur Straftäter“ ist zu eng. Beides steht so nicht im Programm.",
       "index": 0,
       "title": "Zeit für Deutschland – Programm zur Wahl zum 21. Deutschen Bundestag",
       "publisher": "AfD-Bundesverband",
       "date": "12.01.2025",
-      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf"
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "alle-abschieben",
       "category": "umstritten",
+      "claim": "„Die AfD will alle Ausländer abschieben.“",
+      "nuance": "Die Formel „alle Ausländer“ ist zu weit; die Formel „nur Straftäter“ ist zu eng. Beides steht so nicht im Programm.",
       "index": 1,
       "title": "AfD-Parteitag nimmt Forderung nach „Remigration“ ins Wahlprogramm auf",
       "publisher": "Stuttgarter Zeitung / dpa",
       "date": "11.01.2025",
-      "url": "https://www.stuttgarter-zeitung.de/politik/bundestagswahl-2025-afd-parteitag-nimmt-forderung-nach-remigration-ins-wahlprogramm-auf-79031156.html"
+      "url": "https://www.stuttgarter-zeitung.de/politik/bundestagswahl-2025-afd-parteitag-nimmt-forderung-nach-remigration-ins-wahlprogramm-auf-79031156.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 7,
+        "total": 7,
+        "missing": [],
+        "matched": [
+          "Parteitag",
+          "nimmt",
+          "Forderung",
+          "Remigration",
+          "Wahlprogramm",
+          "Ausländer",
+          "abschieben"
+        ]
+      }
     },
     {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "alle-abschieben",
       "category": "umstritten",
+      "claim": "„Die AfD will alle Ausländer abschieben.“",
+      "nuance": "Die Formel „alle Ausländer“ ist zu weit; die Formel „nur Straftäter“ ist zu eng. Beides steht so nicht im Programm.",
       "index": 2,
       "title": "Making-Of zur Geheimplan-Recherche (Potsdamer Treffen)",
       "publisher": "CORRECTIV",
       "date": "10.01.2024",
-      "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/10/making-of-zur-geheimplan-recherche/"
+      "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/10/making-of-zur-geheimplan-recherche/",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.71,
+        "found": 5,
+        "total": 7,
+        "missing": [
+          "Ausländer",
+          "abschieben"
+        ],
+        "matched": [
+          "Making",
+          "Geheimplan",
+          "Recherche",
+          "Potsdamer",
+          "Treffen"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "brandmauer",
       "category": "umstritten",
+      "claim": "„Die Brandmauer ist undemokratisch, weil sie 20,8 Prozent der Wähler von der Regierung ausschließt.“",
+      "nuance": "",
       "index": 0,
       "title": "Grundgesetz, Artikel 21 (Parteien)",
       "publisher": "Bundesministerium der Justiz",
       "date": "24.05.1949, Fassung laufend",
-      "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      "url": "https://www.gesetze-im-internet.de/gg/art_21.html",
+      "content": {
+        "checked": true,
+        "verdict": "partial",
+        "ratio": 0.33,
+        "found": 3,
+        "total": 9,
+        "missing": [
+          "Artikel",
+          "Brandmauer",
+          "undemokratisch",
+          "Prozent",
+          "Wähler",
+          "Regierung"
+        ],
+        "matched": [
+          "Grundgesetz",
+          "Parteien",
+          "ausschließt"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "brandmauer",
       "category": "umstritten",
+      "claim": "„Die Brandmauer ist undemokratisch, weil sie 20,8 Prozent der Wähler von der Regierung ausschließt.“",
+      "nuance": "",
       "index": 1,
       "title": "Merz, AfD und Migration: Was passiert da gerade?",
       "publisher": "WDR",
       "date": "31.01.2025",
-      "url": "https://www1.wdr.de/politik/wahlen/bundestagswahl/merz-cdu-afd-abstimmung-brandmauer-100.html"
+      "url": "https://www1.wdr.de/politik/wahlen/bundestagswahl/merz-cdu-afd-abstimmung-brandmauer-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.67,
+        "found": 6,
+        "total": 9,
+        "missing": [
+          "undemokratisch",
+          "Wähler",
+          "ausschließt"
+        ],
+        "matched": [
+          "Migration",
+          "passiert",
+          "gerade",
+          "Brandmauer",
+          "Prozent",
+          "Regierung"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "brandmauer",
       "category": "umstritten",
+      "claim": "„Die Brandmauer ist undemokratisch, weil sie 20,8 Prozent der Wähler von der Regierung ausschließt.“",
+      "nuance": "",
       "index": 2,
       "title": "Mehrheit stimmt nach Regierungserklärung für Migrationsantrag der Union",
       "publisher": "Deutscher Bundestag",
       "date": "29.01.2025",
-      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-regierungserklaerung-1041594"
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-regierungserklaerung-1041594",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.6,
+        "found": 6,
+        "total": 10,
+        "missing": [
+          "Brandmauer",
+          "undemokratisch",
+          "Prozent",
+          "Wähler"
+        ],
+        "matched": [
+          "Mehrheit",
+          "stimmt",
+          "Regierungserklärung",
+          "Migrationsantrag",
+          "Union",
+          "Regierung"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "union-afd-mehrheit",
       "category": "belegt",
+      "claim": "„Die Union hat im Bundestag eine Mehrheit nur mit AfD-Stimmen erreicht.“",
+      "nuance": "",
       "index": 0,
       "title": "Mehrheit stimmt nach Regierungserklärung für Migrationsantrag der Union",
       "publisher": "Deutscher Bundestag",
       "date": "29.01.2025",
-      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-regierungserklaerung-1041594"
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-regierungserklaerung-1041594",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.88,
+        "found": 7,
+        "total": 8,
+        "missing": [
+          "erreicht"
+        ],
+        "matched": [
+          "Mehrheit",
+          "stimmt",
+          "Regierungserklärung",
+          "Migrationsantrag",
+          "Union",
+          "Bundestag",
+          "Stimmen"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "union-afd-mehrheit",
       "category": "belegt",
+      "claim": "„Die Union hat im Bundestag eine Mehrheit nur mit AfD-Stimmen erreicht.“",
+      "nuance": "",
       "index": 1,
       "title": "Fünf-Punkte-Plan der Union erhält Mehrheit im Bundestag",
       "publisher": "ZDFheute",
       "date": "29.01.2025",
-      "url": "https://www.zdfheute.de/politik/deutschland/migration-antraege-cdu-abstimmung-ergebnisse-100.html"
+      "url": "https://www.zdfheute.de/politik/deutschland/migration-antraege-cdu-abstimmung-ergebnisse-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.88,
+        "found": 7,
+        "total": 8,
+        "missing": [
+          "erreicht"
+        ],
+        "matched": [
+          "Fünf",
+          "Punkte",
+          "Union",
+          "erhält",
+          "Mehrheit",
+          "Bundestag",
+          "Stimmen"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "union-afd-mehrheit",
       "category": "belegt",
+      "claim": "„Die Union hat im Bundestag eine Mehrheit nur mit AfD-Stimmen erreicht.“",
+      "nuance": "",
       "index": 2,
       "title": "Ein Tabubruch mit Ansage",
       "publisher": "tagesschau.de",
       "date": "29.01.2025",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-debatte-migration-102.html"
+      "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-debatte-migration-102.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 7,
+        "total": 7,
+        "missing": [],
+        "matched": [
+          "Tabubruch",
+          "Ansage",
+          "Union",
+          "Bundestag",
+          "Mehrheit",
+          "Stimmen",
+          "erreicht"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "vizepraesident",
       "category": "widerlegt",
+      "claim": "„Der AfD wird das Recht auf einen Bundestags-Vizepräsidenten rechtswidrig verweigert.“",
+      "nuance": "",
       "index": 0,
       "title": "Kein AfD-Recht auf Bundestags-Vize (Organklage abgelehnt)",
       "publisher": "taz / dpa",
       "date": "22.03.2022",
-      "url": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742"
+      "url": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.86,
+        "found": 6,
+        "total": 7,
+        "missing": [
+          "verweigert"
+        ],
+        "matched": [
+          "Recht",
+          "Bundestags",
+          "Organklage",
+          "abgelehnt",
+          "Vizepräsidenten",
+          "rechtswidrig"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "vizepraesident",
       "category": "widerlegt",
+      "claim": "„Der AfD wird das Recht auf einen Bundestags-Vizepräsidenten rechtswidrig verweigert.“",
+      "nuance": "",
       "index": 1,
       "title": "Bundestags-Vize: AfD-Mann fällt als einziger durch",
       "publisher": "t-online / dpa",
       "date": "25.03.2025",
-      "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_100651758/bundestags-vizepraesident-afd-mann-gerold-otten-scheitert-als-einziger.html"
+      "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_100651758/bundestags-vizepraesident-afd-mann-gerold-otten-scheitert-als-einziger.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.71,
+        "found": 5,
+        "total": 7,
+        "missing": [
+          "rechtswidrig",
+          "verweigert"
+        ],
+        "matched": [
+          "Bundestags",
+          "fällt",
+          "einziger",
+          "Recht",
+          "Vizepräsidenten"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "vizepraesident",
       "category": "widerlegt",
+      "claim": "„Der AfD wird das Recht auf einen Bundestags-Vizepräsidenten rechtswidrig verweigert.“",
+      "nuance": "",
       "index": 2,
       "title": "Erneut kein Bundestags-Vizepräsident aus den Reihen der AfD",
       "publisher": "Deutschlandfunk",
       "date": "14.11.2024",
-      "url": "https://www.deutschlandfunk.de/erneut-kein-bundestags-vizepraesident-aus-den-reihen-der-afd-104.html"
+      "url": "https://www.deutschlandfunk.de/erneut-kein-bundestags-vizepraesident-aus-den-reihen-der-afd-104.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.88,
+        "found": 7,
+        "total": 8,
+        "missing": [
+          "verweigert"
+        ],
+        "matched": [
+          "Erneut",
+          "Bundestags",
+          "Vizepräsident",
+          "Reihen",
+          "Recht",
+          "Vizepräsidenten",
+          "rechtswidrig"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "thueringen",
       "category": "belegt",
+      "claim": "„Die AfD ist in Thüringen stärkste Kraft.“",
+      "nuance": "",
       "index": 0,
       "title": "Landtagswahl 2024 in Thüringen – endgültiges Ergebnis",
       "publisher": "Der Landeswahlleiter Thüringen",
       "date": "12.09.2024",
-      "url": "https://wahlen.thueringen.de/datenbank/wahl1/wahl.asp?wJahr=2024&wahlart=LW&zeigeErg=LAND"
+      "url": "https://wahlen.thueringen.de/datenbank/wahl1/wahl.asp?wJahr=2024&wahlart=LW&zeigeErg=LAND",
+      "content": {
+        "checked": true,
+        "verdict": "partial",
+        "ratio": 0.5,
+        "found": 3,
+        "total": 6,
+        "missing": [
+          "endgültiges",
+          "stärkste",
+          "Kraft"
+        ],
+        "matched": [
+          "Landtagswahl",
+          "Thüringen",
+          "Ergebnis"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "thueringen",
       "category": "belegt",
+      "claim": "„Die AfD ist in Thüringen stärkste Kraft.“",
+      "nuance": "",
       "index": 1,
       "title": "Landtagswahl in Thüringen 2024 – Wahlanalyse",
       "publisher": "Forschungsgruppe Wahlen",
       "date": "02.09.2024",
-      "url": "https://www.forschungsgruppe.de/Wahlen/Wahlanalysen/Newsl_Thue_240902.pdf"
+      "url": "https://www.forschungsgruppe.de/Wahlen/Wahlanalysen/Newsl_Thue_240902.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "bundestagswahl",
       "category": "belegt",
+      "claim": "„Die AfD wurde bei der Bundestagswahl 2025 mit 20,8 Prozent zweitstärkste Kraft.“",
+      "nuance": "",
       "index": 0,
       "title": "Bundestagswahl 2025: Endgültiges Ergebnis",
       "publisher": "Die Bundeswahlleiterin",
       "date": "14.03.2025",
-      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html"
+      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.86,
+        "found": 6,
+        "total": 7,
+        "missing": [
+          "Kraft"
+        ],
+        "matched": [
+          "Bundestagswahl",
+          "Endgültiges",
+          "Ergebnis",
+          "wurde",
+          "Prozent",
+          "zweitstärkste"
+        ]
+      }
     },
     {
       "topicId": "demokratie",
       "topicTitle": "Demokratie, Wahlen, Brandmauer",
       "entryId": "bundestagswahl",
       "category": "belegt",
+      "claim": "„Die AfD wurde bei der Bundestagswahl 2025 mit 20,8 Prozent zweitstärkste Kraft.“",
+      "nuance": "",
       "index": 1,
       "title": "Wahlergebnisse und Wählerschaft der AfD",
       "publisher": "Bundeszentrale für politische Bildung",
       "date": "16.05.2026",
-      "url": "https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/"
+      "url": "https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 7,
+        "total": 7,
+        "missing": [],
+        "matched": [
+          "Wahlergebnisse",
+          "Wählerschaft",
+          "wurde",
+          "Bundestagswahl",
+          "Prozent",
+          "zweitstärkste",
+          "Kraft"
+        ]
+      }
     },
     {
       "topicId": "programm",
       "topicTitle": "Programm & Außenpolitik",
       "entryId": "eu-austritt",
       "category": "belegt",
+      "claim": "„Die AfD will aus der Europäischen Union austreten.“",
+      "nuance": "",
       "index": 0,
       "title": "Zeit für Deutschland – Programm zur Wahl zum 21. Deutschen Bundestag",
       "publisher": "AfD-Bundesverband",
       "date": "12.01.2025",
-      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf"
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
     },
     {
       "topicId": "programm",
       "topicTitle": "Programm & Außenpolitik",
       "entryId": "eu-austritt",
       "category": "belegt",
+      "claim": "„Die AfD will aus der Europäischen Union austreten.“",
+      "nuance": "",
       "index": 1,
       "title": "AfD-Wahlprogramm: Vater, Mutter, Kind – und der Ausstieg aus der EU",
       "publisher": "ZDFheute",
       "date": "12.01.2025",
-      "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html"
+      "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.86,
+        "found": 6,
+        "total": 7,
+        "missing": [
+          "austreten"
+        ],
+        "matched": [
+          "Wahlprogramm",
+          "Vater",
+          "Mutter",
+          "Ausstieg",
+          "Europäischen",
+          "Union"
+        ]
+      }
     },
     {
       "topicId": "programm",
       "topicTitle": "Programm & Außenpolitik",
       "entryId": "russland-finanzierung",
       "category": "nicht-belegt",
+      "claim": "„Die AfD wird von Russland finanziert.“",
+      "nuance": "Dokumentierte Geldflüsse im Umfeld sind nicht dasselbe wie eine Parteifinanzierung aus Moskau.",
       "index": 0,
       "title": "Ermittlungen zu russischer Einflussnahme: AfD-Politiker Krah und seine „Bargeldreserve“",
       "publisher": "tagesschau.de (WDR/NDR/SZ)",
       "date": "17.04.2024",
-      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-byston-voice-of-europe-russland-100.html"
+      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-byston-voice-of-europe-russland-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 7,
+        "total": 7,
+        "missing": [],
+        "matched": [
+          "Ermittlungen",
+          "russischer",
+          "Einflussnahme",
+          "Politiker",
+          "Bargeldreserve",
+          "Russland",
+          "finanziert"
+        ]
+      }
     },
     {
       "topicId": "programm",
       "topicTitle": "Programm & Außenpolitik",
       "entryId": "russland-finanzierung",
       "category": "nicht-belegt",
+      "claim": "„Die AfD wird von Russland finanziert.“",
+      "nuance": "Dokumentierte Geldflüsse im Umfeld sind nicht dasselbe wie eine Parteifinanzierung aus Moskau.",
       "index": 1,
       "title": "Ist Geld aus China auch bei AfD-Politiker Krah gelandet?",
       "publisher": "tagesschau.de (WDR/NDR/SZ)",
       "date": "16.05.2024",
-      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-102.html"
+      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-102.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 5,
+        "total": 5,
+        "missing": [],
+        "matched": [
+          "China",
+          "Politiker",
+          "gelandet",
+          "Russland",
+          "finanziert"
+        ]
+      }
     },
     {
       "topicId": "programm",
       "topicTitle": "Programm & Außenpolitik",
       "entryId": "china-spionage",
       "category": "belegt",
+      "claim": "„Ein Mitarbeiter des AfD-Abgeordneten Maximilian Krah wurde wegen Spionage für China verurteilt.“",
+      "nuance": "",
       "index": 0,
       "title": "Haftbefehl gegen AfD-Mitarbeiter Jian G. wegen China-Spionageverdacht",
       "publisher": "tagesschau.de",
       "date": "24.04.2024",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/haftbefehl-jian-g-afd-100.html"
+      "url": "https://www.tagesschau.de/inland/innenpolitik/haftbefehl-jian-g-afd-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.9,
+        "found": 9,
+        "total": 10,
+        "missing": [
+          "verurteilt"
+        ],
+        "matched": [
+          "Haftbefehl",
+          "Mitarbeiter",
+          "wegen",
+          "China",
+          "Spionageverdacht",
+          "Abgeordneten",
+          "Maximilian",
+          "wurde"
+        ]
+      }
     },
     {
       "topicId": "programm",
       "topicTitle": "Programm & Außenpolitik",
       "entryId": "china-spionage",
       "category": "belegt",
+      "claim": "„Ein Mitarbeiter des AfD-Abgeordneten Maximilian Krah wurde wegen Spionage für China verurteilt.“",
+      "nuance": "",
       "index": 1,
       "title": "Ehemaliger Krah-Mitarbeiter wegen Spionage verurteilt",
       "publisher": "ZDFheute",
       "date": "30.09.2025",
-      "url": "https://www.zdfheute.de/politik/deutschland/prozess-urteil-krah-spionage-china-100.html"
+      "url": "https://www.zdfheute.de/politik/deutschland/prozess-urteil-krah-spionage-china-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 9,
+        "total": 9,
+        "missing": [],
+        "matched": [
+          "Ehemaliger",
+          "Mitarbeiter",
+          "wegen",
+          "Spionage",
+          "verurteilt",
+          "Abgeordneten",
+          "Maximilian",
+          "wurde"
+        ]
+      }
     },
     {
       "topicId": "partei",
       "topicTitle": "Partei, Personal, Finanzen",
       "entryId": "parteispende",
       "category": "belegt",
+      "claim": "„Die AfD musste wegen illegaler Parteispenden Strafzahlungen leisten.“",
+      "nuance": "",
       "index": 0,
       "title": "AfD muss Sanktionszahlungen wegen Parteispende leisten (OVG Berlin-Brandenburg 3 B 28/21)",
       "publisher": "NVwZ / C.H. Beck",
       "date": "03.03.2023",
-      "url": "https://rsw.beck.de/zeitschriften/nvwz/startseite/2023/03/03/afd-muss-sanktionszahlungen-wegen-parteispende-leisten"
+      "url": "https://rsw.beck.de/zeitschriften/nvwz/startseite/2023/03/03/afd-muss-sanktionszahlungen-wegen-parteispende-leisten",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.78,
+        "found": 7,
+        "total": 9,
+        "missing": [
+          "illegaler",
+          "Strafzahlungen"
+        ],
+        "matched": [
+          "Sanktionszahlungen",
+          "wegen",
+          "Parteispende",
+          "leisten",
+          "Berlin",
+          "Brandenburg",
+          "Parteispenden"
+        ]
+      }
     },
     {
       "topicId": "partei",
       "topicTitle": "Partei, Personal, Finanzen",
       "entryId": "parteispende",
       "category": "belegt",
+      "claim": "„Die AfD musste wegen illegaler Parteispenden Strafzahlungen leisten.“",
+      "nuance": "",
       "index": 1,
       "title": "Parteispende an AfD war wohl illegal",
       "publisher": "Süddeutsche Zeitung",
       "date": "24.10.2019",
-      "url": "https://www.sueddeutsche.de/politik/afd-spenden-strafe-1.4655156"
+      "url": "https://www.sueddeutsche.de/politik/afd-spenden-strafe-1.4655156",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.71,
+        "found": 5,
+        "total": 7,
+        "missing": [
+          "wegen",
+          "leisten"
+        ],
+        "matched": [
+          "Parteispende",
+          "illegal",
+          "illegaler",
+          "Parteispenden",
+          "Strafzahlungen"
+        ]
+      }
     },
     {
       "topicId": "partei",
       "topicTitle": "Partei, Personal, Finanzen",
       "entryId": "parteispende",
       "category": "belegt",
+      "claim": "„Die AfD musste wegen illegaler Parteispenden Strafzahlungen leisten.“",
+      "nuance": "",
       "index": 2,
       "title": "Strafzahlung für Weidel-Spende: AfD scheitert vor Gericht",
       "publisher": "BKZ / dpa",
       "date": "23.10.2026",
-      "url": "https://www.bkz.de/nachrichten/strafzahlung-fuer-weidel-spende-afd-scheitert-vor-gericht-108909.html"
+      "url": "https://www.bkz.de/nachrichten/strafzahlung-fuer-weidel-spende-afd-scheitert-vor-gericht-108909.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.9,
+        "found": 9,
+        "total": 10,
+        "missing": [
+          "leisten"
+        ],
+        "matched": [
+          "Strafzahlung",
+          "Weidel",
+          "Spende",
+          "scheitert",
+          "Gericht",
+          "wegen",
+          "illegaler",
+          "Parteispenden"
+        ]
+      }
     },
     {
       "topicId": "partei",
       "topicTitle": "Partei, Personal, Finanzen",
       "entryId": "frauenanteil",
       "category": "belegt",
+      "claim": "„Die AfD-Fraktion hat den niedrigsten Frauenanteil aller Fraktionen.“",
+      "nuance": "",
       "index": 0,
       "title": "Abgeordneten-Statistik: Der neue Bundestag in Zahlen",
       "publisher": "Deutscher Bundestag",
       "date": "24.02.2025",
-      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw09-wahlergebnis-statistik-1055550"
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw09-wahlergebnis-statistik-1055550",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 8,
+        "total": 8,
+        "missing": [],
+        "matched": [
+          "Abgeordneten",
+          "Statistik",
+          "Bundestag",
+          "Zahlen",
+          "Fraktion",
+          "niedrigsten",
+          "Frauenanteil",
+          "Fraktionen"
+        ]
+      }
     },
     {
       "topicId": "partei",
       "topicTitle": "Partei, Personal, Finanzen",
       "entryId": "frauenanteil",
       "category": "belegt",
+      "claim": "„Die AfD-Fraktion hat den niedrigsten Frauenanteil aller Fraktionen.“",
+      "nuance": "",
       "index": 1,
       "title": "Gewählte Abgeordnete – Bundestagswahl 2025",
       "publisher": "Bundeszentrale für politische Bildung",
       "date": "02.04.2025",
-      "url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete"
+      "url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.71,
+        "found": 5,
+        "total": 7,
+        "missing": [
+          "Fraktion",
+          "Fraktionen"
+        ],
+        "matched": [
+          "Gewählte",
+          "Abgeordnete",
+          "Bundestagswahl",
+          "niedrigsten",
+          "Frauenanteil"
+        ]
+      }
     },
     {
       "topicId": "partei",
       "topicTitle": "Partei, Personal, Finanzen",
       "entryId": "letzte-kraft",
       "category": "nicht-belegt",
+      "claim": "„Die AfD ist eine der letzten demokratischen Kräfte im Land.“",
+      "nuance": "",
       "index": 0,
       "title": "AfD laut Verfassungsschutz gesichert rechtsextremistisch",
       "publisher": "Deutsche Welle",
       "date": "02.05.2025",
-      "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368"
+      "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.67,
+        "found": 4,
+        "total": 6,
+        "missing": [
+          "letzten",
+          "Kräfte"
+        ],
+        "matched": [
+          "Verfassungsschutz",
+          "gesichert",
+          "rechtsextremistisch",
+          "demokratischen"
+        ]
+      }
     },
     {
       "topicId": "partei",
       "topicTitle": "Partei, Personal, Finanzen",
       "entryId": "letzte-kraft",
       "category": "nicht-belegt",
+      "claim": "„Die AfD ist eine der letzten demokratischen Kräfte im Land.“",
+      "nuance": "",
       "index": 1,
       "title": "Grundgesetz, Artikel 21 (Parteien)",
       "publisher": "Bundesministerium der Justiz",
       "date": "24.05.1949, Fassung laufend",
-      "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      "url": "https://www.gesetze-im-internet.de/gg/art_21.html",
+      "content": {
+        "checked": true,
+        "verdict": "partial",
+        "ratio": 0.5,
+        "found": 3,
+        "total": 6,
+        "missing": [
+          "Artikel",
+          "letzten",
+          "Kräfte"
+        ],
+        "matched": [
+          "Grundgesetz",
+          "Parteien",
+          "demokratischen"
+        ]
+      }
     },
     {
       "topicId": "partei",
       "topicTitle": "Partei, Personal, Finanzen",
       "entryId": "letzte-kraft",
       "category": "nicht-belegt",
+      "claim": "„Die AfD ist eine der letzten demokratischen Kräfte im Land.“",
+      "nuance": "",
       "index": 2,
       "title": "Bundestagswahl 2025: Endgültiges Ergebnis",
       "publisher": "Die Bundeswahlleiterin",
       "date": "14.03.2025",
-      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html"
+      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.67,
+        "found": 4,
+        "total": 6,
+        "missing": [
+          "letzten",
+          "Kräfte"
+        ],
+        "matched": [
+          "Bundestagswahl",
+          "Endgültiges",
+          "Ergebnis",
+          "demokratischen"
+        ]
+      }
     }
   ],
   "results": [
@@ -648,13 +1665,16 @@
         {
           "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368"
+      "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368",
+      "textBytes": 163708
     },
     {
       "http": 200,
@@ -663,13 +1683,16 @@
         {
           "url": "https://www.tagesschau.de/inland/afd-medien-publizieren-verfassungsschutz-gutachten-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.tagesschau.de/inland/afd-medien-publizieren-verfassungsschutz-gutachten-100.html"
+      "url": "https://www.tagesschau.de/inland/afd-medien-publizieren-verfassungsschutz-gutachten-100.html",
+      "textBytes": 433540
     },
     {
       "http": 200,
@@ -678,13 +1701,16 @@
         {
           "url": "https://www.bverwg.de/pm/2025/54",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.bverwg.de/pm/2025/54"
+      "url": "https://www.bverwg.de/pm/2025/54",
+      "textBytes": 758906
     },
     {
       "http": 200,
@@ -693,13 +1719,16 @@
         {
           "url": "https://www.vg-koeln.nrw.de/behoerde/presse/Pressemitteilungen/Archiv/2025/05_08052025/",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.vg-koeln.nrw.de/behoerde/presse/Pressemitteilungen/Archiv/2025/05_08052025/"
+      "url": "https://www.vg-koeln.nrw.de/behoerde/presse/Pressemitteilungen/Archiv/2025/05_08052025/",
+      "textBytes": 31245
     },
     {
       "http": 206,
@@ -708,13 +1737,16 @@
         {
           "url": "https://correctiv.org/aktuelles/afd/2026/03/05/justiz-ab-wann-ist-die-afd-gesichert-rechtsextrem/",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
       "verdict": "ok",
-      "url": "https://correctiv.org/aktuelles/afd/2026/03/05/justiz-ab-wann-ist-die-afd-gesichert-rechtsextrem/"
+      "url": "https://correctiv.org/aktuelles/afd/2026/03/05/justiz-ab-wann-ist-die-afd-gesichert-rechtsextrem/",
+      "textBytes": 104378
     },
     {
       "http": 206,
@@ -723,18 +1755,22 @@
         {
           "url": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein",
           "status": 301,
-          "location": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein/"
+          "location": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein/",
+          "contentType": "text/html; charset=UTF-8"
         },
         {
           "url": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein/",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": true,
+      "contentType": "text/html; charset=UTF-8",
       "verdict": "redirect",
-      "url": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein"
+      "url": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein",
+      "textBytes": 93356
     },
     {
       "http": 200,
@@ -743,11 +1779,13 @@
         {
           "url": "https://www.medienservice.sachsen.de/medien/news/1071656/download_pdf",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "application/pdf"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "application/pdf",
       "verdict": "ok",
       "url": "https://www.medienservice.sachsen.de/medien/news/1071656/download_pdf"
     },
@@ -758,11 +1796,13 @@
         {
           "url": "https://www.medienservice.sachsen.de/medien/news/1083988/download_pdf",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "application/pdf"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "application/pdf",
       "verdict": "ok",
       "url": "https://www.medienservice.sachsen.de/medien/news/1083988/download_pdf"
     },
@@ -773,13 +1813,16 @@
         {
           "url": "https://www.gesetze-im-internet.de/gg/art_21.html",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html",
       "verdict": "ok",
-      "url": "https://www.gesetze-im-internet.de/gg/art_21.html"
+      "url": "https://www.gesetze-im-internet.de/gg/art_21.html",
+      "textBytes": 4726
     },
     {
       "http": 200,
@@ -788,13 +1831,16 @@
         {
           "url": "https://www1.wdr.de/politik/afd-ablauf-parteiverbotsverfahren-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www1.wdr.de/politik/afd-ablauf-parteiverbotsverfahren-100.html"
+      "url": "https://www1.wdr.de/politik/afd-ablauf-parteiverbotsverfahren-100.html",
+      "textBytes": 91463
     },
     {
       "http": 200,
@@ -803,13 +1849,16 @@
         {
           "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html"
+      "url": "https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2025/2025168.html",
+      "textBytes": 36187
     },
     {
       "http": 403,
@@ -818,11 +1867,13 @@
         {
           "url": "https://www.zeit.de/news/2017-01/18/parteien-die-hoecke-rede-von-dresden-in-wortlaut-auszuegen-18171207",
           "status": 403,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "blocked",
       "message": "Antwort 403 – meist Bot-Schutz; im Browser normalerweise abrufbar",
       "url": "https://www.zeit.de/news/2017-01/18/parteien-die-hoecke-rede-von-dresden-in-wortlaut-auszuegen-18171207"
@@ -834,13 +1885,16 @@
         {
           "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-zentralrat-der-juden-ist-empoert-ueber-rede-des-afd-politikers-a-1130520.html",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-zentralrat-der-juden-ist-empoert-ueber-rede-des-afd-politikers-a-1130520.html"
+      "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-zentralrat-der-juden-ist-empoert-ueber-rede-des-afd-politikers-a-1130520.html",
+      "textBytes": 549644
     },
     {
       "http": 200,
@@ -849,13 +1903,16 @@
         {
           "url": "https://www.tagesschau.de/inland/innenpolitik/urteil-bestaetigung-hoecke-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/urteil-bestaetigung-hoecke-100.html"
+      "url": "https://www.tagesschau.de/inland/innenpolitik/urteil-bestaetigung-hoecke-100.html",
+      "textBytes": 434619
     },
     {
       "http": 200,
@@ -864,13 +1921,16 @@
         {
           "url": "https://www.dw.com/de/ermittlungen-gegen-afd-mann-h%C3%B6cke-eingestellt/a-37772192",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.dw.com/de/ermittlungen-gegen-afd-mann-h%C3%B6cke-eingestellt/a-37772192"
+      "url": "https://www.dw.com/de/ermittlungen-gegen-afd-mann-h%C3%B6cke-eingestellt/a-37772192",
+      "textBytes": 121782
     },
     {
       "http": 206,
@@ -879,11 +1939,13 @@
         {
           "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "application/pdf"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "application/pdf",
       "verdict": "ok",
       "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf"
     },
@@ -894,18 +1956,22 @@
         {
           "url": "https://mediendienst-integration.de/artikel/73-abgeordnete-mit-migrationshintergrund.html",
           "status": 303,
-          "location": "https://mediendienst-integration.de/news/73-abgeordnete-mit-migrationshintergrund/"
+          "location": "https://mediendienst-integration.de/news/73-abgeordnete-mit-migrationshintergrund/",
+          "contentType": "text/html; charset=iso-8859-1"
         },
         {
           "url": "https://mediendienst-integration.de/news/73-abgeordnete-mit-migrationshintergrund/",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": true,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "redirect",
-      "url": "https://mediendienst-integration.de/artikel/73-abgeordnete-mit-migrationshintergrund.html"
+      "url": "https://mediendienst-integration.de/artikel/73-abgeordnete-mit-migrationshintergrund.html",
+      "textBytes": 70860
     },
     {
       "http": 206,
@@ -914,13 +1980,16 @@
         {
           "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw09-wahlergebnis-statistik-1055550",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw09-wahlergebnis-statistik-1055550"
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw09-wahlergebnis-statistik-1055550",
+      "textBytes": 259722
     },
     {
       "http": 200,
@@ -929,13 +1998,16 @@
         {
           "url": "https://www.srf.ch/news/international/deutschland-wahlen-2025/bundestagswahlen-2025-migrantische-afd-waehler-wollen-weniger-zuwanderung",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.srf.ch/news/international/deutschland-wahlen-2025/bundestagswahlen-2025-migrantische-afd-waehler-wollen-weniger-zuwanderung"
+      "url": "https://www.srf.ch/news/international/deutschland-wahlen-2025/bundestagswahlen-2025-migrantische-afd-waehler-wollen-weniger-zuwanderung",
+      "textBytes": 121422
     },
     {
       "http": 206,
@@ -944,13 +2016,16 @@
         {
           "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html",
       "verdict": "ok",
-      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html"
+      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html",
+      "textBytes": 32904
     },
     {
       "http": 206,
@@ -959,13 +2034,16 @@
         {
           "url": "https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/"
+      "url": "https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/",
+      "textBytes": 191186
     },
     {
       "http": 206,
@@ -974,13 +2052,16 @@
         {
           "url": "https://www.tagesspiegel.de/berlin/migrantisch-deutsch-afd-wahler-wir-stehen-immer-noch-auf-einer-stufe-mit-fluchtlingen-15748778.html",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.tagesspiegel.de/berlin/migrantisch-deutsch-afd-wahler-wir-stehen-immer-noch-auf-einer-stufe-mit-fluchtlingen-15748778.html"
+      "url": "https://www.tagesspiegel.de/berlin/migrantisch-deutsch-afd-wahler-wir-stehen-immer-noch-auf-einer-stufe-mit-fluchtlingen-15748778.html",
+      "textBytes": 438713
     },
     {
       "http": 206,
@@ -989,13 +2070,16 @@
         {
           "url": "https://www.stuttgarter-zeitung.de/politik/bundestagswahl-2025-afd-parteitag-nimmt-forderung-nach-remigration-ins-wahlprogramm-auf-79031156.html",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.stuttgarter-zeitung.de/politik/bundestagswahl-2025-afd-parteitag-nimmt-forderung-nach-remigration-ins-wahlprogramm-auf-79031156.html"
+      "url": "https://www.stuttgarter-zeitung.de/politik/bundestagswahl-2025-afd-parteitag-nimmt-forderung-nach-remigration-ins-wahlprogramm-auf-79031156.html",
+      "textBytes": 175555
     },
     {
       "http": 206,
@@ -1004,13 +2088,16 @@
         {
           "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/10/making-of-zur-geheimplan-recherche/",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
       "verdict": "ok",
-      "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/10/making-of-zur-geheimplan-recherche/"
+      "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/10/making-of-zur-geheimplan-recherche/",
+      "textBytes": 105402
     },
     {
       "http": 200,
@@ -1019,13 +2106,16 @@
         {
           "url": "https://www1.wdr.de/politik/wahlen/bundestagswahl/merz-cdu-afd-abstimmung-brandmauer-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www1.wdr.de/politik/wahlen/bundestagswahl/merz-cdu-afd-abstimmung-brandmauer-100.html"
+      "url": "https://www1.wdr.de/politik/wahlen/bundestagswahl/merz-cdu-afd-abstimmung-brandmauer-100.html",
+      "textBytes": 107763
     },
     {
       "http": 206,
@@ -1034,13 +2124,16 @@
         {
           "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-regierungserklaerung-1041594",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-regierungserklaerung-1041594"
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-regierungserklaerung-1041594",
+      "textBytes": 402555
     },
     {
       "http": 200,
@@ -1049,13 +2142,16 @@
         {
           "url": "https://www.zdfheute.de/politik/deutschland/migration-antraege-cdu-abstimmung-ergebnisse-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.zdfheute.de/politik/deutschland/migration-antraege-cdu-abstimmung-ergebnisse-100.html"
+      "url": "https://www.zdfheute.de/politik/deutschland/migration-antraege-cdu-abstimmung-ergebnisse-100.html",
+      "textBytes": 258173
     },
     {
       "http": 200,
@@ -1064,13 +2160,16 @@
         {
           "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-debatte-migration-102.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-debatte-migration-102.html"
+      "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-debatte-migration-102.html",
+      "textBytes": 670411
     },
     {
       "http": 206,
@@ -1079,18 +2178,22 @@
         {
           "url": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742",
           "status": 301,
-          "location": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742/"
+          "location": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742/",
+          "contentType": "text/html; charset=iso-8859-1"
         },
         {
           "url": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742/",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": true,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "redirect",
-      "url": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742"
+      "url": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742",
+      "textBytes": 185037
     },
     {
       "http": 206,
@@ -1099,13 +2202,16 @@
         {
           "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_100651758/bundestags-vizepraesident-afd-mann-gerold-otten-scheitert-als-einziger.html",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_100651758/bundestags-vizepraesident-afd-mann-gerold-otten-scheitert-als-einziger.html"
+      "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_100651758/bundestags-vizepraesident-afd-mann-gerold-otten-scheitert-als-einziger.html",
+      "textBytes": 475039
     },
     {
       "http": 200,
@@ -1114,13 +2220,16 @@
         {
           "url": "https://www.deutschlandfunk.de/erneut-kein-bundestags-vizepraesident-aus-den-reihen-der-afd-104.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.deutschlandfunk.de/erneut-kein-bundestags-vizepraesident-aus-den-reihen-der-afd-104.html"
+      "url": "https://www.deutschlandfunk.de/erneut-kein-bundestags-vizepraesident-aus-den-reihen-der-afd-104.html",
+      "textBytes": 391556
     },
     {
       "http": 200,
@@ -1129,13 +2238,16 @@
         {
           "url": "https://wahlen.thueringen.de/datenbank/wahl1/wahl.asp?wJahr=2024&wahlart=LW&zeigeErg=LAND",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html",
       "verdict": "ok",
-      "url": "https://wahlen.thueringen.de/datenbank/wahl1/wahl.asp?wJahr=2024&wahlart=LW&zeigeErg=LAND"
+      "url": "https://wahlen.thueringen.de/datenbank/wahl1/wahl.asp?wJahr=2024&wahlart=LW&zeigeErg=LAND",
+      "textBytes": 35930
     },
     {
       "http": 206,
@@ -1144,11 +2256,13 @@
         {
           "url": "https://www.forschungsgruppe.de/Wahlen/Wahlanalysen/Newsl_Thue_240902.pdf",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "application/pdf"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "application/pdf",
       "verdict": "ok",
       "url": "https://www.forschungsgruppe.de/Wahlen/Wahlanalysen/Newsl_Thue_240902.pdf"
     },
@@ -1159,13 +2273,16 @@
         {
           "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html"
+      "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html",
+      "textBytes": 349043
     },
     {
       "http": 200,
@@ -1174,13 +2291,16 @@
         {
           "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-byston-voice-of-europe-russland-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-byston-voice-of-europe-russland-100.html"
+      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-byston-voice-of-europe-russland-100.html",
+      "textBytes": 383456
     },
     {
       "http": 200,
@@ -1189,13 +2309,16 @@
         {
           "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-102.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-102.html"
+      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-krah-102.html",
+      "textBytes": 416949
     },
     {
       "http": 200,
@@ -1204,13 +2327,16 @@
         {
           "url": "https://www.tagesschau.de/inland/innenpolitik/haftbefehl-jian-g-afd-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/haftbefehl-jian-g-afd-100.html"
+      "url": "https://www.tagesschau.de/inland/innenpolitik/haftbefehl-jian-g-afd-100.html",
+      "textBytes": 424441
     },
     {
       "http": 200,
@@ -1219,13 +2345,16 @@
         {
           "url": "https://www.zdfheute.de/politik/deutschland/prozess-urteil-krah-spionage-china-100.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.zdfheute.de/politik/deutschland/prozess-urteil-krah-spionage-china-100.html"
+      "url": "https://www.zdfheute.de/politik/deutschland/prozess-urteil-krah-spionage-china-100.html",
+      "textBytes": 239645
     },
     {
       "http": 200,
@@ -1234,13 +2363,16 @@
         {
           "url": "https://rsw.beck.de/zeitschriften/nvwz/startseite/2023/03/03/afd-muss-sanktionszahlungen-wegen-parteispende-leisten",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://rsw.beck.de/zeitschriften/nvwz/startseite/2023/03/03/afd-muss-sanktionszahlungen-wegen-parteispende-leisten"
+      "url": "https://rsw.beck.de/zeitschriften/nvwz/startseite/2023/03/03/afd-muss-sanktionszahlungen-wegen-parteispende-leisten",
+      "textBytes": 405788
     },
     {
       "http": 200,
@@ -1249,13 +2381,16 @@
         {
           "url": "https://www.sueddeutsche.de/politik/afd-spenden-strafe-1.4655156",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.sueddeutsche.de/politik/afd-spenden-strafe-1.4655156"
+      "url": "https://www.sueddeutsche.de/politik/afd-spenden-strafe-1.4655156",
+      "textBytes": 389749
     },
     {
       "http": 200,
@@ -1264,13 +2399,16 @@
         {
           "url": "https://www.bkz.de/nachrichten/strafzahlung-fuer-weidel-spende-afd-scheitert-vor-gericht-108909.html",
           "status": 200,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
         }
       ],
       "hostChanged": false,
       "redirected": false,
+      "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
-      "url": "https://www.bkz.de/nachrichten/strafzahlung-fuer-weidel-spende-afd-scheitert-vor-gericht-108909.html"
+      "url": "https://www.bkz.de/nachrichten/strafzahlung-fuer-weidel-spende-afd-scheitert-vor-gericht-108909.html",
+      "textBytes": 65000
     },
     {
       "http": 206,
@@ -1279,18 +2417,22 @@
         {
           "url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete",
           "status": 301,
-          "location": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete/"
+          "location": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete/",
+          "contentType": "text/html; charset=utf-8"
         },
         {
           "url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete/",
           "status": 206,
-          "location": null
+          "location": null,
+          "contentType": "text/html; charset=UTF-8"
         }
       ],
       "hostChanged": false,
       "redirected": true,
+      "contentType": "text/html; charset=UTF-8",
       "verdict": "redirect",
-      "url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete"
+      "url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete",
+      "textBytes": 149204
     }
   ]
 }
