@@ -22,7 +22,7 @@ Beide Android-Apps brauchen keine Netzwerkberechtigung; Installation aus unbekan
 | --- | --- |
 | `AfD-Check-1.0.0.apk` | `b291322d64625edb22f4490b2b0f4429a64f0e13697eab5fd625066c6092ec33` |
 | `AfD-Dossier-1.0.0.apk` | `5b0f3c97bebae773891e242b6fbce2c05a9d77e66ce298fa51d3b0f9608e4eae` |
-| `AfD-Dossier-1.0.0.exe` | `65f77cb518c6be9ae26d2d4f5c35f1d2e736d6ed6a558d806506f1b466f0748b` |
+| `AfD-Dossier-1.0.0.exe` | `05d84f07820034d08a48c20d9b3ac37ca2e9e4ec6acb7c5188efaaf8b5b3849b` |
 
 Prüfen mit `sha256sum <datei>` (Linux/macOS) oder `Get-FileHash <datei> -Algorithm SHA256` (Windows).
 Die Werte gelten für die Dateien im Release `afd-check-1.0.0` bzw. `v1.0.0`.
