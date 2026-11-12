@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-12T10:34:46.242Z",
-  "generatedAtLocal": "12. November 2026 um 11:34",
+  "generatedAt": "2026-11-12T13:43:24.774Z",
+  "generatedAtLocal": "12. November 2026 um 14:43",
   "totals": {
-    "references": 57,
-    "uniqueUrls": 42,
-    "hosts": 28
+    "references": 85,
+    "uniqueUrls": 51,
+    "hosts": 33
   },
   "counts": {
-    "ok": 37,
-    "redirect": 4,
-    "blocked": 1
+    "ok": 44,
+    "redirect": 5,
+    "blocked": 2
   },
   "sources": [
     {
@@ -596,6 +596,176 @@
       }
     },
     {
+      "topicId": "ns-bezuege",
+      "topicTitle": "Hitler-Vergleich & NS-Bezüge",
+      "entryId": "antisemitismus",
+      "category": "umstritten",
+      "claim": "„Die AfD ist antisemitisch.“",
+      "nuance": "Das Zitat ist dokumentiert, die Bewertung „antisemitisch“ ist eine Einordnung – und die Partei als Ganze noch einmal eine andere Frage. Wer den Vorwurf erhebt, sollte den Wortlaut kennen; wer ihn bestreitet, die Reaktion der Partei erklären.",
+      "index": 0,
+      "title": "Die Höcke-Rede von Dresden in Wortlaut-Auszügen",
+      "publisher": "DIE ZEIT / dpa",
+      "date": "18.01.2017",
+      "url": "https://www.zeit.de/news/2017-01/18/parteien-die-hoecke-rede-von-dresden-in-wortlaut-auszuegen-18171207",
+      "content": {
+        "checked": false,
+        "reason": "Zugriff verweigert"
+      }
+    },
+    {
+      "topicId": "ns-bezuege",
+      "topicTitle": "Hitler-Vergleich & NS-Bezüge",
+      "entryId": "antisemitismus",
+      "category": "umstritten",
+      "claim": "„Die AfD ist antisemitisch.“",
+      "nuance": "Das Zitat ist dokumentiert, die Bewertung „antisemitisch“ ist eine Einordnung – und die Partei als Ganze noch einmal eine andere Frage. Wer den Vorwurf erhebt, sollte den Wortlaut kennen; wer ihn bestreitet, die Reaktion der Partei erklären.",
+      "index": 1,
+      "title": "Zentralrat der Juden empört über Rede des AfD-Politikers",
+      "publisher": "DER SPIEGEL",
+      "date": "18.01.2017",
+      "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-zentralrat-der-juden-ist-empoert-ueber-rede-des-afd-politikers-a-1130520.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 5,
+        "total": 5,
+        "missing": [],
+        "matched": [
+          "Zentralrat",
+          "Juden",
+          "empört",
+          "Politikers",
+          "antisemitisch"
+        ]
+      }
+    },
+    {
+      "topicId": "ns-bezuege",
+      "topicTitle": "Hitler-Vergleich & NS-Bezüge",
+      "entryId": "antisemitismus",
+      "category": "umstritten",
+      "claim": "„Die AfD ist antisemitisch.“",
+      "nuance": "Das Zitat ist dokumentiert, die Bewertung „antisemitisch“ ist eine Einordnung – und die Partei als Ganze noch einmal eine andere Frage. Wer den Vorwurf erhebt, sollte den Wortlaut kennen; wer ihn bestreitet, die Reaktion der Partei erklären.",
+      "index": 2,
+      "title": "Ermittlungen gegen Höcke eingestellt",
+      "publisher": "Deutsche Welle",
+      "date": "01.03.2017",
+      "url": "https://www.dw.com/de/ermittlungen-gegen-afd-mann-h%C3%B6cke-eingestellt/a-37772192",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.75,
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "antisemitisch"
+        ],
+        "matched": [
+          "Ermittlungen",
+          "Höcke",
+          "eingestellt"
+        ]
+      }
+    },
+    {
+      "topicId": "ns-bezuege",
+      "topicTitle": "Hitler-Vergleich & NS-Bezüge",
+      "entryId": "rechte-kontakte",
+      "category": "belegt",
+      "claim": "„Die AfD pflegt Kontakte zu gewaltbereiten Rechtsextremen.“",
+      "nuance": "Ein Netzwerk mit Verbindungen in Fraktion und Parteispitze ist kein Parteitagsbeschluss. Die Partei nannte das Treffen „kein AfD-Termin“ – erklären muss sie die personellen Verbindungen trotzdem.",
+      "index": 0,
+      "title": "Geheimtreffen in Potsdam: AfD-Mitarbeiter brüstet sich mit Gewalt",
+      "publisher": "CORRECTIV",
+      "date": "17.01.2024",
+      "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/17/geheimtreffen-in-potsdam-afd-mitarbeiter-bruestet-sich-mit-gewalt",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.89,
+        "found": 8,
+        "total": 9,
+        "missing": [
+          "pflegt"
+        ],
+        "matched": [
+          "Geheimtreffen",
+          "Potsdam",
+          "Mitarbeiter",
+          "brüstet",
+          "Gewalt",
+          "Kontakte",
+          "gewaltbereiten",
+          "Rechtsextremen"
+        ]
+      }
+    },
+    {
+      "topicId": "ns-bezuege",
+      "topicTitle": "Hitler-Vergleich & NS-Bezüge",
+      "entryId": "rechte-kontakte",
+      "category": "belegt",
+      "claim": "„Die AfD pflegt Kontakte zu gewaltbereiten Rechtsextremen.“",
+      "nuance": "Ein Netzwerk mit Verbindungen in Fraktion und Parteispitze ist kein Parteitagsbeschluss. Die Partei nannte das Treffen „kein AfD-Termin“ – erklären muss sie die personellen Verbindungen trotzdem.",
+      "index": 1,
+      "title": "AfD-Politiker diskutieren offenbar Vertreibungsplan",
+      "publisher": "tagesschau.de",
+      "date": "10.01.2024",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/afd-neonazis-geheimtreffen-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.75,
+        "found": 6,
+        "total": 8,
+        "missing": [
+          "pflegt",
+          "gewaltbereiten"
+        ],
+        "matched": [
+          "Politiker",
+          "diskutieren",
+          "offenbar",
+          "Vertreibungsplan",
+          "Kontakte",
+          "Rechtsextremen"
+        ]
+      }
+    },
+    {
+      "topicId": "ns-bezuege",
+      "topicTitle": "Hitler-Vergleich & NS-Bezüge",
+      "entryId": "rechte-kontakte",
+      "category": "belegt",
+      "claim": "„Die AfD pflegt Kontakte zu gewaltbereiten Rechtsextremen.“",
+      "nuance": "Ein Netzwerk mit Verbindungen in Fraktion und Parteispitze ist kein Parteitagsbeschluss. Die Partei nannte das Treffen „kein AfD-Termin“ – erklären muss sie die personellen Verbindungen trotzdem.",
+      "index": 2,
+      "title": "Rechtsextremisten berieten mit AfD-Politikern über Massenausweisungen",
+      "publisher": "Deutschlandfunk",
+      "date": "11.01.2024",
+      "url": "https://www.deutschlandfunk.de/rechtsextremisten-berieten-mit-afd-politikern-ueber-massenausweisungen-von-menschen-mit-migrationshi-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.88,
+        "found": 7,
+        "total": 8,
+        "missing": [
+          "pflegt"
+        ],
+        "matched": [
+          "Rechtsextremisten",
+          "berieten",
+          "Politikern",
+          "Massenausweisungen",
+          "Kontakte",
+          "gewaltbereiten",
+          "Rechtsextremen"
+        ]
+      }
+    },
+    {
       "topicId": "migration",
       "topicTitle": "Migration, Mitglieder, Wähler",
       "entryId": "keine-migranten",
@@ -838,6 +1008,62 @@
           "Recherche",
           "Potsdamer",
           "Treffen"
+        ]
+      }
+    },
+    {
+      "topicId": "migration",
+      "topicTitle": "Migration, Mitglieder, Wähler",
+      "entryId": "ost-partei",
+      "category": "widerlegt",
+      "claim": "„Die AfD ist eine ostdeutsche Regionalpartei.“",
+      "nuance": "Der Ost-West-Unterschied ist real, beschreibt aber eine Gewichtung, keine Regionalpartei. Wer die AfD als Ost-Phänomen abtut, rechnet rund 7,2 Millionen westdeutsche Wählerstimmen weg.",
+      "index": 0,
+      "title": "Wahlergebnisse und Wählerschaft der AfD",
+      "publisher": "Bundeszentrale für politische Bildung",
+      "date": "16.05.2026",
+      "url": "https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 4,
+        "total": 4,
+        "missing": [],
+        "matched": [
+          "Wahlergebnisse",
+          "Wählerschaft",
+          "ostdeutsche",
+          "Regionalpartei"
+        ]
+      }
+    },
+    {
+      "topicId": "migration",
+      "topicTitle": "Migration, Mitglieder, Wähler",
+      "entryId": "ost-partei",
+      "category": "widerlegt",
+      "claim": "„Die AfD ist eine ostdeutsche Regionalpartei.“",
+      "nuance": "Der Ost-West-Unterschied ist real, beschreibt aber eine Gewichtung, keine Regionalpartei. Wer die AfD als Ost-Phänomen abtut, rechnet rund 7,2 Millionen westdeutsche Wählerstimmen weg.",
+      "index": 1,
+      "title": "Bundestagswahl 2025: Endgültiges Ergebnis",
+      "publisher": "Die Bundeswahlleiterin",
+      "date": "14.03.2025",
+      "url": "https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.6,
+        "found": 3,
+        "total": 5,
+        "missing": [
+          "ostdeutsche",
+          "Regionalpartei"
+        ],
+        "matched": [
+          "Bundestagswahl",
+          "Endgültiges",
+          "Ergebnis"
         ]
       }
     },
@@ -1234,6 +1460,141 @@
           "Prozent",
           "zweitstärkste",
           "Kraft"
+        ]
+      }
+    },
+    {
+      "topicId": "demokratie",
+      "topicTitle": "Demokratie, Wahlen, Brandmauer",
+      "entryId": "aemter-laender",
+      "category": "umstritten",
+      "claim": "„Die AfD wird in Hessen, Thüringen und Sachsen pauschal aus allen Ämtern ausgegrenzt.“",
+      "nuance": "Ausgrenzung und Mehrheitsentscheidung sind nicht dasselbe: Aus der Geschäftsordnung folgt kein einklagbarer Anspruch auf einen Vize-Posten – das hat das Bundesverfassungsgericht 2022 entschieden. Politisch umstritten bleibt die Praxis trotzdem.",
+      "index": 0,
+      "title": "Hessen: AfD kritisiert Rhein in Brandmauer-Debatte (mehr als ein Dutzend gescheiterte Vize-Kandidaten)",
+      "publisher": "Hessenschau / hr",
+      "date": "05.10.2026",
+      "url": "https://www.hessenschau.de/politik/afd-kritisiert-rhein-in-brandmauer-debatte-scharf-verhoehnung-der-waehler-v1,reaktionen-rhein-brandmauer-afd-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.9,
+        "found": 9,
+        "total": 10,
+        "missing": [
+          "pauschal"
+        ],
+        "matched": [
+          "Hessen",
+          "kritisiert",
+          "Rhein",
+          "Brandmauer",
+          "Debatte",
+          "Dutzend",
+          "Thüringen",
+          "Sachsen"
+        ]
+      }
+    },
+    {
+      "topicId": "demokratie",
+      "topicTitle": "Demokratie, Wahlen, Brandmauer",
+      "entryId": "aemter-laender",
+      "category": "umstritten",
+      "claim": "„Die AfD wird in Hessen, Thüringen und Sachsen pauschal aus allen Ämtern ausgegrenzt.“",
+      "nuance": "Ausgrenzung und Mehrheitsentscheidung sind nicht dasselbe: Aus der Geschäftsordnung folgt kein einklagbarer Anspruch auf einen Vize-Posten – das hat das Bundesverfassungsgericht 2022 entschieden. Politisch umstritten bleibt die Praxis trotzdem.",
+      "index": 1,
+      "title": "Präsidium des Sächsischen Landtags, 8. Wahlperiode (André Wendt, AfD, Zweiter Vizepräsident)",
+      "publisher": "Sächsischer Landtag",
+      "date": "laufend",
+      "url": "https://www.landtag.sachsen.de/de/parlament/praesidium/index.cshtml",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.7,
+        "found": 7,
+        "total": 10,
+        "missing": [
+          "Hessen",
+          "Thüringen",
+          "pauschal"
+        ],
+        "matched": [
+          "Präsidium",
+          "Sächsischen",
+          "Landtags",
+          "Wahlperiode",
+          "Wendt",
+          "Zweiter",
+          "Sachsen"
+        ]
+      }
+    },
+    {
+      "topicId": "demokratie",
+      "topicTitle": "Demokratie, Wahlen, Brandmauer",
+      "entryId": "aemter-laender",
+      "category": "umstritten",
+      "claim": "„Die AfD wird in Hessen, Thüringen und Sachsen pauschal aus allen Ämtern ausgegrenzt.“",
+      "nuance": "Ausgrenzung und Mehrheitsentscheidung sind nicht dasselbe: Aus der Geschäftsordnung folgt kein einklagbarer Anspruch auf einen Vize-Posten – das hat das Bundesverfassungsgericht 2022 entschieden. Politisch umstritten bleibt die Praxis trotzdem.",
+      "index": 2,
+      "title": "Dr. Thadäus König ist neuer Landtagspräsident (54 Stimmen, Muhsal 32)",
+      "publisher": "Thüringer Landtag",
+      "date": "28.09.2024",
+      "url": "https://www.thueringer-landtag.de/presse/pressemitteilungen/2024/dr-thadaeus-koenig-ist-neuer-landtagspraesident",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.6,
+        "found": 6,
+        "total": 10,
+        "missing": [
+          "Muhsal",
+          "Hessen",
+          "Sachsen",
+          "pauschal"
+        ],
+        "matched": [
+          "Thadäus",
+          "König",
+          "neuer",
+          "Landtagspräsident",
+          "Stimmen",
+          "Thüringen"
+        ]
+      }
+    },
+    {
+      "topicId": "demokratie",
+      "topicTitle": "Demokratie, Wahlen, Brandmauer",
+      "entryId": "aemter-laender",
+      "category": "umstritten",
+      "claim": "„Die AfD wird in Hessen, Thüringen und Sachsen pauschal aus allen Ämtern ausgegrenzt.“",
+      "nuance": "Ausgrenzung und Mehrheitsentscheidung sind nicht dasselbe: Aus der Geschäftsordnung folgt kein einklagbarer Anspruch auf einen Vize-Posten – das hat das Bundesverfassungsgericht 2022 entschieden. Politisch umstritten bleibt die Praxis trotzdem.",
+      "index": 3,
+      "title": "Kein AfD-Recht auf Bundestags-Vize (Organklage abgelehnt)",
+      "publisher": "taz / dpa",
+      "date": "22.03.2022",
+      "url": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742",
+      "content": {
+        "checked": true,
+        "verdict": "partial",
+        "ratio": 0.5,
+        "found": 5,
+        "total": 10,
+        "missing": [
+          "Hessen",
+          "Thüringen",
+          "Sachsen",
+          "pauschal",
+          "ausgegrenzt"
+        ],
+        "matched": [
+          "Recht",
+          "Bundestags",
+          "Organklage",
+          "abgelehnt",
+          "Ämtern"
         ]
       }
     },
@@ -1655,6 +2016,339 @@
           "demokratischen"
         ]
       }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "klima-paris",
+      "category": "belegt",
+      "claim": "„Die AfD will aus dem Pariser Klimaabkommen aussteigen und die CO₂-Abgabe abschaffen.“",
+      "nuance": "Belegt ist die Programmforderung, nicht ihre Begründung. Ob der Ausstieg klimapolitisch tragfähig ist, ist eine andere Frage – und eine, die sich mit Zahlen führen lässt.",
+      "index": 0,
+      "title": "Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag",
+      "publisher": "AfD-Bundesverband",
+      "date": "12.01.2025",
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "klima-paris",
+      "category": "belegt",
+      "claim": "„Die AfD will aus dem Pariser Klimaabkommen aussteigen und die CO₂-Abgabe abschaffen.“",
+      "nuance": "Belegt ist die Programmforderung, nicht ihre Begründung. Ob der Ausstieg klimapolitisch tragfähig ist, ist eine andere Frage – und eine, die sich mit Zahlen führen lässt.",
+      "index": 1,
+      "title": "AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte",
+      "publisher": "RND",
+      "date": "23.02.2025",
+      "url": "https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html",
+      "content": {
+        "checked": false,
+        "reason": "Zugriff verweigert"
+      }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "sozialstaat",
+      "category": "nicht-belegt",
+      "claim": "„Die AfD will den Sozialstaat abschaffen.“",
+      "nuance": "„Sozialstaat abschaffen“ ist ein Strohmann. Die belegte Forderung lautet, Leistungen für Nichtdeutsche zu kürzen – eine harte politische Frage, aber eine andere Aussage.",
+      "index": 0,
+      "title": "Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag",
+      "publisher": "AfD-Bundesverband",
+      "date": "12.01.2025",
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "sozialstaat",
+      "category": "nicht-belegt",
+      "claim": "„Die AfD will den Sozialstaat abschaffen.“",
+      "nuance": "„Sozialstaat abschaffen“ ist ein Strohmann. Die belegte Forderung lautet, Leistungen für Nichtdeutsche zu kürzen – eine harte politische Frage, aber eine andere Aussage.",
+      "index": 1,
+      "title": "AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte",
+      "publisher": "RND",
+      "date": "23.02.2025",
+      "url": "https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html",
+      "content": {
+        "checked": false,
+        "reason": "Zugriff verweigert"
+      }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "sozialstaat",
+      "category": "nicht-belegt",
+      "claim": "„Die AfD will den Sozialstaat abschaffen.“",
+      "nuance": "„Sozialstaat abschaffen“ ist ein Strohmann. Die belegte Forderung lautet, Leistungen für Nichtdeutsche zu kürzen – eine harte politische Frage, aber eine andere Aussage.",
+      "index": 2,
+      "title": "AfD-Wahlprogramm: Vater, Mutter, Kind – und der Ausstieg aus der EU",
+      "publisher": "ZDFheute",
+      "date": "12.01.2025",
+      "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.83,
+        "found": 5,
+        "total": 6,
+        "missing": [
+          "abschaffen"
+        ],
+        "matched": [
+          "Wahlprogramm",
+          "Vater",
+          "Mutter",
+          "Ausstieg",
+          "Sozialstaat"
+        ]
+      }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "sozialpolitik-reiche",
+      "category": "umstritten",
+      "claim": "„Die AfD macht Politik für Reiche und gegen kleine Leute.“",
+      "nuance": "Die Richtung der Maßnahmen ist belegbar, das Etikett „für Reiche“ ist eine Bewertung. Wer es benutzt, sollte die Zahl nennen, aus der es folgt.",
+      "index": 0,
+      "title": "AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte",
+      "publisher": "RND",
+      "date": "23.02.2025",
+      "url": "https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html",
+      "content": {
+        "checked": false,
+        "reason": "Zugriff verweigert"
+      }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "sozialpolitik-reiche",
+      "category": "umstritten",
+      "claim": "„Die AfD macht Politik für Reiche und gegen kleine Leute.“",
+      "nuance": "Die Richtung der Maßnahmen ist belegbar, das Etikett „für Reiche“ ist eine Bewertung. Wer es benutzt, sollte die Zahl nennen, aus der es folgt.",
+      "index": 1,
+      "title": "Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag",
+      "publisher": "AfD-Bundesverband",
+      "date": "12.01.2025",
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "wirtschaft-unfaehig",
+      "category": "umstritten",
+      "claim": "„Die AfD ist wirtschaftlich unfähig.“",
+      "nuance": "„Unfähig“ beschreibt Personen, nicht Programme. Die belastbaren Fragen lauten: Wie werden die 182 Milliarden gegenfinanziert, was kostet der Austritt aus dem Binnenmarkt, welche Übergangsregeln gelten für Schulden, Verträge und Lieferketten?",
+      "index": 0,
+      "title": "AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte",
+      "publisher": "RND",
+      "date": "23.02.2025",
+      "url": "https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html",
+      "content": {
+        "checked": false,
+        "reason": "Zugriff verweigert"
+      }
+    },
+    {
+      "topicId": "wirtschaft",
+      "topicTitle": "Wirtschaft, Sozialstaat, Klima",
+      "entryId": "wirtschaft-unfaehig",
+      "category": "umstritten",
+      "claim": "„Die AfD ist wirtschaftlich unfähig.“",
+      "nuance": "„Unfähig“ beschreibt Personen, nicht Programme. Die belastbaren Fragen lauten: Wie werden die 182 Milliarden gegenfinanziert, was kostet der Austritt aus dem Binnenmarkt, welche Übergangsregeln gelten für Schulden, Verträge und Lieferketten?",
+      "index": 1,
+      "title": "Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag",
+      "publisher": "AfD-Bundesverband",
+      "date": "12.01.2025",
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
+    },
+    {
+      "topicId": "russland",
+      "topicTitle": "Russland, NATO, EU",
+      "entryId": "russland-freundlich",
+      "category": "belegt",
+      "claim": "„Die AfD betreibt eine russlandfreundliche Politik.“",
+      "nuance": "Eine Programmlage ist keine Finanzierung. Die russlandfreundliche Position lässt sich aus dem Text belegen, Zahlungen aus Moskau an die Partei nicht – dafür gibt es einen eigenen Eintrag.",
+      "index": 0,
+      "title": "Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag",
+      "publisher": "AfD-Bundesverband",
+      "date": "12.01.2025",
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
+    },
+    {
+      "topicId": "russland",
+      "topicTitle": "Russland, NATO, EU",
+      "entryId": "russland-freundlich",
+      "category": "belegt",
+      "claim": "„Die AfD betreibt eine russlandfreundliche Politik.“",
+      "nuance": "Eine Programmlage ist keine Finanzierung. Die russlandfreundliche Position lässt sich aus dem Text belegen, Zahlungen aus Moskau an die Partei nicht – dafür gibt es einen eigenen Eintrag.",
+      "index": 1,
+      "title": "AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte",
+      "publisher": "RND",
+      "date": "23.02.2025",
+      "url": "https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html",
+      "content": {
+        "checked": false,
+        "reason": "Zugriff verweigert"
+      }
+    },
+    {
+      "topicId": "russland",
+      "topicTitle": "Russland, NATO, EU",
+      "entryId": "russland-freundlich",
+      "category": "belegt",
+      "claim": "„Die AfD betreibt eine russlandfreundliche Politik.“",
+      "nuance": "Eine Programmlage ist keine Finanzierung. Die russlandfreundliche Position lässt sich aus dem Text belegen, Zahlungen aus Moskau an die Partei nicht – dafür gibt es einen eigenen Eintrag.",
+      "index": 2,
+      "title": "AfD-Wahlprogramm: Weidel übernimmt „Remigration“ – kontroverse Russland-Haltung",
+      "publisher": "Frankfurter Rundschau",
+      "date": "16.01.2025",
+      "url": "https://www.fr.de/politik/afd-wahlprogramm-weidel-uebernimmt-remigration-kontroverse-russland-haltung-93510171.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.89,
+        "found": 8,
+        "total": 9,
+        "missing": [
+          "betreibt"
+        ],
+        "matched": [
+          "Wahlprogramm",
+          "Weidel",
+          "übernimmt",
+          "Remigration",
+          "kontroverse",
+          "Russland",
+          "russlandfreundliche",
+          "Politik"
+        ]
+      }
+    },
+    {
+      "topicId": "russland",
+      "topicTitle": "Russland, NATO, EU",
+      "entryId": "russland-freundlich",
+      "category": "belegt",
+      "claim": "„Die AfD betreibt eine russlandfreundliche Politik.“",
+      "nuance": "Eine Programmlage ist keine Finanzierung. Die russlandfreundliche Position lässt sich aus dem Text belegen, Zahlungen aus Moskau an die Partei nicht – dafür gibt es einen eigenen Eintrag.",
+      "index": 3,
+      "title": "Was zur Außenpolitik in den Wahlprogrammen steht",
+      "publisher": "tagesschau.de",
+      "date": "13.02.2025",
+      "url": "https://www.tagesschau.de/inland/bundestagswahl/programmvergleich/wahlprogramme-aussenpolitik-sicherheit-frieden-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 0.83,
+        "found": 5,
+        "total": 6,
+        "missing": [
+          "betreibt"
+        ],
+        "matched": [
+          "Außenpolitik",
+          "Wahlprogrammen",
+          "steht",
+          "russlandfreundliche",
+          "Politik"
+        ]
+      }
+    },
+    {
+      "topicId": "russland",
+      "topicTitle": "Russland, NATO, EU",
+      "entryId": "nato-eu",
+      "category": "umstritten",
+      "claim": "„Die AfD will aus NATO und EU raus.“",
+      "nuance": "Wer beides in einen Satz packt, wird an der NATO-Stelle widerlegt. Sauber ist: EU-Austritt ja, NATO-Austritt nein – jedenfalls nicht im Programm.",
+      "index": 0,
+      "title": "Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag",
+      "publisher": "AfD-Bundesverband",
+      "date": "12.01.2025",
+      "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "content": {
+        "checked": false,
+        "reason": "kein HTML (PDF oder Datei)"
+      }
+    },
+    {
+      "topicId": "russland",
+      "topicTitle": "Russland, NATO, EU",
+      "entryId": "nato-eu",
+      "category": "umstritten",
+      "claim": "„Die AfD will aus NATO und EU raus.“",
+      "nuance": "Wer beides in einen Satz packt, wird an der NATO-Stelle widerlegt. Sauber ist: EU-Austritt ja, NATO-Austritt nein – jedenfalls nicht im Programm.",
+      "index": 1,
+      "title": "AfD-Wahlprogramm: Vater, Mutter, Kind – und der Ausstieg aus der EU",
+      "publisher": "ZDFheute",
+      "date": "12.01.2025",
+      "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 4,
+        "total": 4,
+        "missing": [],
+        "matched": [
+          "Wahlprogramm",
+          "Vater",
+          "Mutter",
+          "Ausstieg"
+        ]
+      }
+    },
+    {
+      "topicId": "russland",
+      "topicTitle": "Russland, NATO, EU",
+      "entryId": "nato-eu",
+      "category": "umstritten",
+      "claim": "„Die AfD will aus NATO und EU raus.“",
+      "nuance": "Wer beides in einen Satz packt, wird an der NATO-Stelle widerlegt. Sauber ist: EU-Austritt ja, NATO-Austritt nein – jedenfalls nicht im Programm.",
+      "index": 2,
+      "title": "Was zur Außenpolitik in den Wahlprogrammen steht",
+      "publisher": "tagesschau.de",
+      "date": "13.02.2025",
+      "url": "https://www.tagesschau.de/inland/bundestagswahl/programmvergleich/wahlprogramme-aussenpolitik-sicherheit-frieden-100.html",
+      "content": {
+        "checked": true,
+        "verdict": "ok",
+        "ratio": 1,
+        "found": 3,
+        "total": 3,
+        "missing": [],
+        "matched": [
+          "Außenpolitik",
+          "Wahlprogrammen",
+          "steht"
+        ]
+      }
     }
   ],
   "results": [
@@ -1674,7 +2368,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368",
-      "textBytes": 163708
+      "textBytes": 163017
     },
     {
       "http": 200,
@@ -1746,7 +2440,7 @@
       "contentType": "text/html; charset=UTF-8",
       "verdict": "ok",
       "url": "https://correctiv.org/aktuelles/afd/2026/03/05/justiz-ab-wann-ist-die-afd-gesichert-rechtsextrem/",
-      "textBytes": 104378
+      "textBytes": 96244
     },
     {
       "http": 206,
@@ -1770,7 +2464,7 @@
       "contentType": "text/html; charset=UTF-8",
       "verdict": "redirect",
       "url": "https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein",
-      "textBytes": 93356
+      "textBytes": 85511
     },
     {
       "http": 200,
@@ -1840,7 +2534,7 @@
       "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
       "url": "https://www1.wdr.de/politik/afd-ablauf-parteiverbotsverfahren-100.html",
-      "textBytes": 91463
+      "textBytes": 91415
     },
     {
       "http": 200,
@@ -1894,7 +2588,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-zentralrat-der-juden-ist-empoert-ueber-rede-des-afd-politikers-a-1130520.html",
-      "textBytes": 549644
+      "textBytes": 549731
     },
     {
       "http": 200,
@@ -1930,7 +2624,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.dw.com/de/ermittlungen-gegen-afd-mann-h%C3%B6cke-eingestellt/a-37772192",
-      "textBytes": 121782
+      "textBytes": 121780
     },
     {
       "http": 206,
@@ -1948,6 +2642,66 @@
       "contentType": "application/pdf",
       "verdict": "ok",
       "url": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf"
+    },
+    {
+      "http": 206,
+      "finalUrl": "https://correctiv.org/aktuelles/neue-rechte/2024/01/17/geheimtreffen-in-potsdam-afd-mitarbeiter-bruestet-sich-mit-gewalt/",
+      "chain": [
+        {
+          "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/17/geheimtreffen-in-potsdam-afd-mitarbeiter-bruestet-sich-mit-gewalt",
+          "status": 301,
+          "location": "https://correctiv.org/aktuelles/neue-rechte/2024/01/17/geheimtreffen-in-potsdam-afd-mitarbeiter-bruestet-sich-mit-gewalt/",
+          "contentType": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/17/geheimtreffen-in-potsdam-afd-mitarbeiter-bruestet-sich-mit-gewalt/",
+          "status": 206,
+          "location": null,
+          "contentType": "text/html; charset=UTF-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": true,
+      "contentType": "text/html; charset=UTF-8",
+      "verdict": "redirect",
+      "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/17/geheimtreffen-in-potsdam-afd-mitarbeiter-bruestet-sich-mit-gewalt",
+      "textBytes": 88501
+    },
+    {
+      "http": 200,
+      "finalUrl": "https://www.tagesschau.de/inland/innenpolitik/afd-neonazis-geheimtreffen-100.html",
+      "chain": [
+        {
+          "url": "https://www.tagesschau.de/inland/innenpolitik/afd-neonazis-geheimtreffen-100.html",
+          "status": 200,
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "verdict": "ok",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/afd-neonazis-geheimtreffen-100.html",
+      "textBytes": 451594
+    },
+    {
+      "http": 200,
+      "finalUrl": "https://www.deutschlandfunk.de/rechtsextremisten-berieten-mit-afd-politikern-ueber-massenausweisungen-von-menschen-mit-migrationshi-100.html",
+      "chain": [
+        {
+          "url": "https://www.deutschlandfunk.de/rechtsextremisten-berieten-mit-afd-politikern-ueber-massenausweisungen-von-menschen-mit-migrationshi-100.html",
+          "status": 200,
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "verdict": "ok",
+      "url": "https://www.deutschlandfunk.de/rechtsextremisten-berieten-mit-afd-politikern-ueber-massenausweisungen-von-menschen-mit-migrationshi-100.html",
+      "textBytes": 401749
     },
     {
       "http": 200,
@@ -2007,7 +2761,7 @@
       "contentType": "text/html; charset=UTF-8",
       "verdict": "ok",
       "url": "https://www.srf.ch/news/international/deutschland-wahlen-2025/bundestagswahlen-2025-migrantische-afd-waehler-wollen-weniger-zuwanderung",
-      "textBytes": 121422
+      "textBytes": 121421
     },
     {
       "http": 206,
@@ -2061,7 +2815,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.tagesspiegel.de/berlin/migrantisch-deutsch-afd-wahler-wir-stehen-immer-noch-auf-einer-stufe-mit-fluchtlingen-15748778.html",
-      "textBytes": 438713
+      "textBytes": 439051
     },
     {
       "http": 206,
@@ -2097,7 +2851,7 @@
       "contentType": "text/html; charset=UTF-8",
       "verdict": "ok",
       "url": "https://correctiv.org/aktuelles/neue-rechte/2024/01/10/making-of-zur-geheimplan-recherche/",
-      "textBytes": 105402
+      "textBytes": 105401
     },
     {
       "http": 200,
@@ -2133,7 +2887,7 @@
       "contentType": "text/html;charset=UTF-8",
       "verdict": "ok",
       "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw05-de-regierungserklaerung-1041594",
-      "textBytes": 402555
+      "textBytes": 402681
     },
     {
       "http": 200,
@@ -2151,7 +2905,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.zdfheute.de/politik/deutschland/migration-antraege-cdu-abstimmung-ergebnisse-100.html",
-      "textBytes": 258173
+      "textBytes": 242061
     },
     {
       "http": 200,
@@ -2193,7 +2947,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "redirect",
       "url": "https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742",
-      "textBytes": 185037
+      "textBytes": 184988
     },
     {
       "http": 206,
@@ -2211,7 +2965,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_100651758/bundestags-vizepraesident-afd-mann-gerold-otten-scheitert-als-einziger.html",
-      "textBytes": 475039
+      "textBytes": 477535
     },
     {
       "http": 200,
@@ -2267,6 +3021,60 @@
       "url": "https://www.forschungsgruppe.de/Wahlen/Wahlanalysen/Newsl_Thue_240902.pdf"
     },
     {
+      "http": 206,
+      "finalUrl": "https://www.hessenschau.de/politik/afd-kritisiert-rhein-in-brandmauer-debatte-scharf-verhoehnung-der-waehler-v1,reaktionen-rhein-brandmauer-afd-100.html",
+      "chain": [
+        {
+          "url": "https://www.hessenschau.de/politik/afd-kritisiert-rhein-in-brandmauer-debatte-scharf-verhoehnung-der-waehler-v1,reaktionen-rhein-brandmauer-afd-100.html",
+          "status": 206,
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "verdict": "ok",
+      "url": "https://www.hessenschau.de/politik/afd-kritisiert-rhein-in-brandmauer-debatte-scharf-verhoehnung-der-waehler-v1,reaktionen-rhein-brandmauer-afd-100.html",
+      "textBytes": 286699
+    },
+    {
+      "http": 200,
+      "finalUrl": "https://www.landtag.sachsen.de/de/parlament/praesidium/index.cshtml",
+      "chain": [
+        {
+          "url": "https://www.landtag.sachsen.de/de/parlament/praesidium/index.cshtml",
+          "status": 200,
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "verdict": "ok",
+      "url": "https://www.landtag.sachsen.de/de/parlament/praesidium/index.cshtml",
+      "textBytes": 95219
+    },
+    {
+      "http": 200,
+      "finalUrl": "https://www.thueringer-landtag.de/presse/pressemitteilungen/2024/dr-thadaeus-koenig-ist-neuer-landtagspraesident",
+      "chain": [
+        {
+          "url": "https://www.thueringer-landtag.de/presse/pressemitteilungen/2024/dr-thadaeus-koenig-ist-neuer-landtagspraesident",
+          "status": 200,
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "verdict": "ok",
+      "url": "https://www.thueringer-landtag.de/presse/pressemitteilungen/2024/dr-thadaeus-koenig-ist-neuer-landtagspraesident",
+      "textBytes": 59258
+    },
+    {
       "http": 200,
       "finalUrl": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html",
       "chain": [
@@ -2282,7 +3090,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html",
-      "textBytes": 349043
+      "textBytes": 332470
     },
     {
       "http": 200,
@@ -2354,7 +3162,7 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.zdfheute.de/politik/deutschland/prozess-urteil-krah-spionage-china-100.html",
-      "textBytes": 239645
+      "textBytes": 222904
     },
     {
       "http": 200,
@@ -2408,10 +3216,10 @@
       "contentType": "text/html; charset=utf-8",
       "verdict": "ok",
       "url": "https://www.bkz.de/nachrichten/strafzahlung-fuer-weidel-spende-afd-scheitert-vor-gericht-108909.html",
-      "textBytes": 65000
+      "textBytes": 65086
     },
     {
-      "http": 206,
+      "http": 200,
       "finalUrl": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete/",
       "chain": [
         {
@@ -2422,7 +3230,7 @@
         },
         {
           "url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete/",
-          "status": 206,
+          "status": 200,
           "location": null,
           "contentType": "text/html; charset=UTF-8"
         }
@@ -2433,6 +3241,60 @@
       "verdict": "redirect",
       "url": "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete",
       "textBytes": 149204
+    },
+    {
+      "http": 403,
+      "finalUrl": "https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html",
+      "chain": [
+        {
+          "url": "https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html",
+          "status": 403,
+          "location": null,
+          "contentType": "text/html;charset=utf-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": false,
+      "contentType": "text/html;charset=utf-8",
+      "verdict": "blocked",
+      "message": "Antwort 403 – meist Bot-Schutz; im Browser normalerweise abrufbar",
+      "url": "https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html"
+    },
+    {
+      "http": 200,
+      "finalUrl": "https://www.fr.de/politik/afd-wahlprogramm-weidel-uebernimmt-remigration-kontroverse-russland-haltung-93510171.html",
+      "chain": [
+        {
+          "url": "https://www.fr.de/politik/afd-wahlprogramm-weidel-uebernimmt-remigration-kontroverse-russland-haltung-93510171.html",
+          "status": 200,
+          "location": null,
+          "contentType": "text/html; charset=utf-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "verdict": "ok",
+      "url": "https://www.fr.de/politik/afd-wahlprogramm-weidel-uebernimmt-remigration-kontroverse-russland-haltung-93510171.html",
+      "textBytes": 99966
+    },
+    {
+      "http": 200,
+      "finalUrl": "https://www.tagesschau.de/inland/bundestagswahl/programmvergleich/wahlprogramme-aussenpolitik-sicherheit-frieden-100.html",
+      "chain": [
+        {
+          "url": "https://www.tagesschau.de/inland/bundestagswahl/programmvergleich/wahlprogramme-aussenpolitik-sicherheit-frieden-100.html",
+          "status": 200,
+          "location": null,
+          "contentType": "text/html;charset=UTF-8"
+        }
+      ],
+      "hostChanged": false,
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "verdict": "ok",
+      "url": "https://www.tagesschau.de/inland/bundestagswahl/programmvergleich/wahlprogramme-aussenpolitik-sicherheit-frieden-100.html",
+      "textBytes": 566009
     }
   ]
 }

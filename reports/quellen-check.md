@@ -1,14 +1,14 @@
 # Quellenprüfung der Check-App
 
-Stand: 12. November 2026 um 11:34 · automatisch erzeugt mit `npm run check:sources`
+Stand: 12. November 2026 um 14:43 · automatisch erzeugt mit `npm run check:sources`
 
-57 Quellenangaben in 42 eindeutigen URLs auf 28 Hosts. Jede URL wurde mit einer echten HTTP-Anfrage geprüft; Weiterleitungen wurden verfolgt.
+85 Quellenangaben in 51 eindeutigen URLs auf 33 Hosts. Jede URL wurde mit einer echten HTTP-Anfrage geprüft; Weiterleitungen wurden verfolgt.
 
 | Ergebnis | Anzahl |
 | --- | ---: |
-| erreichbar | 37 |
-| erreichbar, weitergeleitet | 4 |
-| Zugriff verweigert | 1 |
+| erreichbar | 44 |
+| erreichbar, weitergeleitet | 5 |
+| Zugriff verweigert | 2 |
 | gedrosselt | 0 |
 | fehlt | 0 |
 | Serverfehler | 0 |
@@ -21,10 +21,10 @@ Zusätzlich wurde der HTML-Text jeder erreichbaren Quelle nachgeladen und geprü
 
 | Stichwörter im Seitentext | Quellen |
 | --- | ---: |
-| überwiegend gefunden (ab 60 %) | 44 |
-| teilweise gefunden (unter 60 %) | 6 |
+| überwiegend gefunden (ab 60 %) | 59 |
+| teilweise gefunden (unter 60 %) | 7 |
 | kein einziger Begriff gefunden | 0 |
-| nicht prüfbar (PDF, Sperre, Fehler) | 7 |
+| nicht prüfbar (PDF, Sperre, Fehler) | 19 |
 
 Quellen, in denen die zitierten Begriffe ganz oder teilweise fehlen:
 
@@ -35,22 +35,25 @@ Quellen, in denen die zitierten Begriffe ganz oder teilweise fehlen:
 | Ermittlungen gegen Höcke eingestellt | hoecke-freispruch | 3/6 | wurde, Vorwürfen, freigesprochen |
 | Grundgesetz, Artikel 21 (Parteien) | brandmauer | 3/9 | Artikel, Brandmauer, undemokratisch, Prozent, Wähler, Regierung |
 | Landtagswahl 2024 in Thüringen – endgültiges Ergebnis | thueringen | 3/6 | endgültiges, stärkste, Kraft |
+| Kein AfD-Recht auf Bundestags-Vize (Organklage abgelehnt) | aemter-laender | 5/10 | Hessen, Thüringen, Sachsen, pauschal, ausgegrenzt |
 | Grundgesetz, Artikel 21 (Parteien) | letzte-kraft | 3/6 | Artikel, letzten, Kräfte |
 
-## Weiterleitungen (4)
+## Weiterleitungen (5)
 
 | Quelle | Kette | Endziel |
 | --- | --- | --- |
 | correctiv.org | 301 correctiv.org → 206 correctiv.org | https://correctiv.org/aktuelles/afd/2026/06/17/wie-stuft-der-verfassungsschutz-die-afd-in-den-bundeslaendern-ein/ |
+| correctiv.org | 301 correctiv.org → 206 correctiv.org | https://correctiv.org/aktuelles/neue-rechte/2024/01/17/geheimtreffen-in-potsdam-afd-mitarbeiter-bruestet-sich-mit-gewalt/ |
 | mediendienst-integration.de | 303 mediendienst-integration.de → 200 mediendienst-integration.de | https://mediendienst-integration.de/news/73-abgeordnete-mit-migrationshintergrund/ |
 | taz.de | 301 taz.de → 206 taz.de | https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742/ |
-| www.bpb.de | 301 www.bpb.de → 206 www.bpb.de | https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete/ |
+| www.bpb.de | 301 www.bpb.de → 200 www.bpb.de | https://www.bpb.de/kurz-knapp/zahlen-und-fakten/bundestagswahlen/560747/gewaehlte-abgeordnete/ |
 
-## Auffällige Quellen (1)
+## Auffällige Quellen (2)
 
 | Status | HTTP | Quelle | Hinweis |
 | --- | ---: | --- | --- |
 | Zugriff verweigert | 403 | https://www.zeit.de/news/2017-01/18/parteien-die-hoecke-rede-von-dresden-in-wortlaut-auszuegen-18171207 | Antwort 403 – meist Bot-Schutz; im Browser normalerweise abrufbar | 
+| Zugriff verweigert | 403 | https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html | Antwort 403 – meist Bot-Schutz; im Browser normalerweise abrufbar | 
 
 ## Alle Quellen
 
@@ -77,6 +80,12 @@ Quellen, in denen die zitierten Begriffe ganz oder teilweise fehlen:
 | Hitler-Vergleich & NS-Bezüge | programm-demokratie | Zeit für Deutschland – Programm zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
 | Hitler-Vergleich & NS-Bezüge | programm-demokratie | AfD laut Verfassungsschutz gesichert rechtsextremistisch | Deutsche Welle · 02.05.2025 | 200 | erreichbar | 4/5 |
 | Hitler-Vergleich & NS-Bezüge | programm-demokratie | Grundgesetz, Artikel 21 (Parteien) | Bundesministerium der Justiz · 24.05.1949, Fassung laufend | 206 | erreichbar | 3/5 |
+| Hitler-Vergleich & NS-Bezüge | antisemitismus | Die Höcke-Rede von Dresden in Wortlaut-Auszügen | DIE ZEIT / dpa · 18.01.2017 | 403 | Zugriff verweigert | – |
+| Hitler-Vergleich & NS-Bezüge | antisemitismus | Zentralrat der Juden empört über Rede des AfD-Politikers | DER SPIEGEL · 18.01.2017 | 206 | erreichbar | 5/5 |
+| Hitler-Vergleich & NS-Bezüge | antisemitismus | Ermittlungen gegen Höcke eingestellt | Deutsche Welle · 01.03.2017 | 200 | erreichbar | 3/4 |
+| Hitler-Vergleich & NS-Bezüge | rechte-kontakte | Geheimtreffen in Potsdam: AfD-Mitarbeiter brüstet sich mit Gewalt | CORRECTIV · 17.01.2024 | 206 | erreichbar, weitergeleitet | 8/9 |
+| Hitler-Vergleich & NS-Bezüge | rechte-kontakte | AfD-Politiker diskutieren offenbar Vertreibungsplan | tagesschau.de · 10.01.2024 | 200 | erreichbar | 6/8 |
+| Hitler-Vergleich & NS-Bezüge | rechte-kontakte | Rechtsextremisten berieten mit AfD-Politikern über Massenausweisungen | Deutschlandfunk · 11.01.2024 | 200 | erreichbar | 7/8 |
 | Migration, Mitglieder, Wähler | keine-migranten | 73 Abgeordnete mit Migrationshintergrund | Mediendienst Integration · 27.02.2025 | 200 | erreichbar, weitergeleitet | 3/3 |
 | Migration, Mitglieder, Wähler | keine-migranten | Abgeordneten-Statistik: Der neue Bundestag in Zahlen | Deutscher Bundestag · 24.02.2025 | 206 | erreichbar | 4/5 |
 | Migration, Mitglieder, Wähler | keine-migranten | Migrantische AfD-Wähler wollen weniger Zuwanderung | SRF · 15.02.2025 | 200 | erreichbar | 5/5 |
@@ -86,6 +95,8 @@ Quellen, in denen die zitierten Begriffe ganz oder teilweise fehlen:
 | Migration, Mitglieder, Wähler | alle-abschieben | Zeit für Deutschland – Programm zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
 | Migration, Mitglieder, Wähler | alle-abschieben | AfD-Parteitag nimmt Forderung nach „Remigration“ ins Wahlprogramm auf | Stuttgarter Zeitung / dpa · 11.01.2025 | 206 | erreichbar | 7/7 |
 | Migration, Mitglieder, Wähler | alle-abschieben | Making-Of zur Geheimplan-Recherche (Potsdamer Treffen) | CORRECTIV · 10.01.2024 | 206 | erreichbar | 5/7 |
+| Migration, Mitglieder, Wähler | ost-partei | Wahlergebnisse und Wählerschaft der AfD | Bundeszentrale für politische Bildung · 16.05.2026 | 206 | erreichbar | 4/4 |
+| Migration, Mitglieder, Wähler | ost-partei | Bundestagswahl 2025: Endgültiges Ergebnis | Die Bundeswahlleiterin · 14.03.2025 | 206 | erreichbar | 3/5 |
 | Demokratie, Wahlen, Brandmauer | brandmauer | Grundgesetz, Artikel 21 (Parteien) | Bundesministerium der Justiz · 24.05.1949, Fassung laufend | 206 | erreichbar | 3/9 |
 | Demokratie, Wahlen, Brandmauer | brandmauer | Merz, AfD und Migration: Was passiert da gerade? | WDR · 31.01.2025 | 200 | erreichbar | 6/9 |
 | Demokratie, Wahlen, Brandmauer | brandmauer | Mehrheit stimmt nach Regierungserklärung für Migrationsantrag der Union | Deutscher Bundestag · 29.01.2025 | 206 | erreichbar | 6/10 |
@@ -99,6 +110,10 @@ Quellen, in denen die zitierten Begriffe ganz oder teilweise fehlen:
 | Demokratie, Wahlen, Brandmauer | thueringen | Landtagswahl in Thüringen 2024 – Wahlanalyse | Forschungsgruppe Wahlen · 02.09.2024 | 206 | erreichbar | – |
 | Demokratie, Wahlen, Brandmauer | bundestagswahl | Bundestagswahl 2025: Endgültiges Ergebnis | Die Bundeswahlleiterin · 14.03.2025 | 206 | erreichbar | 6/7 |
 | Demokratie, Wahlen, Brandmauer | bundestagswahl | Wahlergebnisse und Wählerschaft der AfD | Bundeszentrale für politische Bildung · 16.05.2026 | 206 | erreichbar | 7/7 |
+| Demokratie, Wahlen, Brandmauer | aemter-laender | Hessen: AfD kritisiert Rhein in Brandmauer-Debatte (mehr als ein Dutzend gescheiterte Vize-Kandidaten) | Hessenschau / hr · 05.10.2026 | 206 | erreichbar | 9/10 |
+| Demokratie, Wahlen, Brandmauer | aemter-laender | Präsidium des Sächsischen Landtags, 8. Wahlperiode (André Wendt, AfD, Zweiter Vizepräsident) | Sächsischer Landtag · laufend | 200 | erreichbar | 7/10 |
+| Demokratie, Wahlen, Brandmauer | aemter-laender | Dr. Thadäus König ist neuer Landtagspräsident (54 Stimmen, Muhsal 32) | Thüringer Landtag · 28.09.2024 | 200 | erreichbar | 6/10 |
+| Demokratie, Wahlen, Brandmauer | aemter-laender | Kein AfD-Recht auf Bundestags-Vize (Organklage abgelehnt) | taz / dpa · 22.03.2022 | 206 | erreichbar, weitergeleitet | 5/10 |
 | Programm & Außenpolitik | eu-austritt | Zeit für Deutschland – Programm zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
 | Programm & Außenpolitik | eu-austritt | AfD-Wahlprogramm: Vater, Mutter, Kind – und der Ausstieg aus der EU | ZDFheute · 12.01.2025 | 200 | erreichbar | 6/7 |
 | Programm & Außenpolitik | russland-finanzierung | Ermittlungen zu russischer Einflussnahme: AfD-Politiker Krah und seine „Bargeldreserve“ | tagesschau.de (WDR/NDR/SZ) · 17.04.2024 | 200 | erreichbar | 7/7 |
@@ -109,10 +124,26 @@ Quellen, in denen die zitierten Begriffe ganz oder teilweise fehlen:
 | Partei, Personal, Finanzen | parteispende | Parteispende an AfD war wohl illegal | Süddeutsche Zeitung · 24.10.2019 | 200 | erreichbar | 5/7 |
 | Partei, Personal, Finanzen | parteispende | Strafzahlung für Weidel-Spende: AfD scheitert vor Gericht | BKZ / dpa · 23.10.2026 | 200 | erreichbar | 9/10 |
 | Partei, Personal, Finanzen | frauenanteil | Abgeordneten-Statistik: Der neue Bundestag in Zahlen | Deutscher Bundestag · 24.02.2025 | 206 | erreichbar | 8/8 |
-| Partei, Personal, Finanzen | frauenanteil | Gewählte Abgeordnete – Bundestagswahl 2025 | Bundeszentrale für politische Bildung · 02.04.2025 | 206 | erreichbar, weitergeleitet | 5/7 |
+| Partei, Personal, Finanzen | frauenanteil | Gewählte Abgeordnete – Bundestagswahl 2025 | Bundeszentrale für politische Bildung · 02.04.2025 | 200 | erreichbar, weitergeleitet | 5/7 |
 | Partei, Personal, Finanzen | letzte-kraft | AfD laut Verfassungsschutz gesichert rechtsextremistisch | Deutsche Welle · 02.05.2025 | 200 | erreichbar | 4/6 |
 | Partei, Personal, Finanzen | letzte-kraft | Grundgesetz, Artikel 21 (Parteien) | Bundesministerium der Justiz · 24.05.1949, Fassung laufend | 206 | erreichbar | 3/6 |
 | Partei, Personal, Finanzen | letzte-kraft | Bundestagswahl 2025: Endgültiges Ergebnis | Die Bundeswahlleiterin · 14.03.2025 | 206 | erreichbar | 4/6 |
+| Wirtschaft, Sozialstaat, Klima | klima-paris | Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
+| Wirtschaft, Sozialstaat, Klima | klima-paris | AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte | RND · 23.02.2025 | 403 | Zugriff verweigert | – |
+| Wirtschaft, Sozialstaat, Klima | sozialstaat | Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
+| Wirtschaft, Sozialstaat, Klima | sozialstaat | AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte | RND · 23.02.2025 | 403 | Zugriff verweigert | – |
+| Wirtschaft, Sozialstaat, Klima | sozialstaat | AfD-Wahlprogramm: Vater, Mutter, Kind – und der Ausstieg aus der EU | ZDFheute · 12.01.2025 | 200 | erreichbar | 5/6 |
+| Wirtschaft, Sozialstaat, Klima | sozialpolitik-reiche | AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte | RND · 23.02.2025 | 403 | Zugriff verweigert | – |
+| Wirtschaft, Sozialstaat, Klima | sozialpolitik-reiche | Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
+| Wirtschaft, Sozialstaat, Klima | wirtschaft-unfaehig | AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte | RND · 23.02.2025 | 403 | Zugriff verweigert | – |
+| Wirtschaft, Sozialstaat, Klima | wirtschaft-unfaehig | Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
+| Russland, NATO, EU | russland-freundlich | Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
+| Russland, NATO, EU | russland-freundlich | AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte | RND · 23.02.2025 | 403 | Zugriff verweigert | – |
+| Russland, NATO, EU | russland-freundlich | AfD-Wahlprogramm: Weidel übernimmt „Remigration“ – kontroverse Russland-Haltung | Frankfurter Rundschau · 16.01.2025 | 200 | erreichbar | 8/9 |
+| Russland, NATO, EU | russland-freundlich | Was zur Außenpolitik in den Wahlprogrammen steht | tagesschau.de · 13.02.2025 | 200 | erreichbar | 5/6 |
+| Russland, NATO, EU | nato-eu | Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag | AfD-Bundesverband · 12.01.2025 | 206 | erreichbar | – |
+| Russland, NATO, EU | nato-eu | AfD-Wahlprogramm: Vater, Mutter, Kind – und der Ausstieg aus der EU | ZDFheute · 12.01.2025 | 200 | erreichbar | 4/4 |
+| Russland, NATO, EU | nato-eu | Was zur Außenpolitik in den Wahlprogrammen steht | tagesschau.de · 13.02.2025 | 200 | erreichbar | 3/3 |
 
 Hinweis: `Zugriff verweigert` und `gedrosselt` bedeuten meist Bot-Schutz oder Rate-Limits, nicht dass die Quelle verschwunden ist. Für die Prüfung wurde eine kleine Range-Anfrage mit Browser-Kennung gesendet; Inhalte wurden nicht ausgewertet.
 

@@ -146,6 +146,40 @@ window.CHECK_DATA = {
             { title: 'AfD laut Verfassungsschutz gesichert rechtsextremistisch', publisher: 'Deutsche Welle', date: '02.05.2025', url: 'https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368' },
             { title: 'Grundgesetz, Artikel 21 (Parteien)', publisher: 'Bundesministerium der Justiz', date: '24.05.1949, Fassung laufend', url: 'https://www.gesetze-im-internet.de/gg/art_21.html' }
           ]
+        },
+        {
+          id: 'antisemitismus',
+          claim: '„Die AfD ist antisemitisch.“',
+          category: 'umstritten',
+          verdict:
+            'Pauschal nicht belegbar. Dokumentiert ist der Fall Höcke: Am 17. Januar 2017 sprach er in Dresden vom „Denkmal der Schande“ ' +
+            'und forderte eine „Wende um 180 Grad“ in der Erinnerungskultur. Der Zentralrat der Juden nannte die Äußerungen „zutiefst empörend“; ' +
+            'die Staatsanwaltschaft Dresden stellte die Ermittlungen wegen Volksverhetzung im März 2017 ein.',
+          nuance:
+            'Das Zitat ist dokumentiert, die Bewertung „antisemitisch“ ist eine Einordnung – und die Partei als Ganze noch einmal eine andere Frage. ' +
+            'Wer den Vorwurf erhebt, sollte den Wortlaut kennen; wer ihn bestreitet, die Reaktion der Partei erklären.',
+          sources: [
+            { title: 'Die Höcke-Rede von Dresden in Wortlaut-Auszügen', publisher: 'DIE ZEIT / dpa', date: '18.01.2017', url: 'https://www.zeit.de/news/2017-01/18/parteien-die-hoecke-rede-von-dresden-in-wortlaut-auszuegen-18171207' },
+            { title: 'Zentralrat der Juden empört über Rede des AfD-Politikers', publisher: 'DER SPIEGEL', date: '18.01.2017', url: 'https://www.spiegel.de/politik/deutschland/bjoern-hoecke-zentralrat-der-juden-ist-empoert-ueber-rede-des-afd-politikers-a-1130520.html' },
+            { title: 'Ermittlungen gegen Höcke eingestellt', publisher: 'Deutsche Welle', date: '01.03.2017', url: 'https://www.dw.com/de/ermittlungen-gegen-afd-mann-h%C3%B6cke-eingestellt/a-37772192' }
+          ]
+        },
+        {
+          id: 'rechte-kontakte',
+          claim: '„Die AfD pflegt Kontakte zu gewaltbereiten Rechtsextremen.“',
+          category: 'belegt',
+          verdict:
+            'Belegt für konkrete Personen und Anlässe. Mario Müller, mehrfach unter anderem wegen gefährlicher Körperverletzung verurteilt, ' +
+            'arbeitete als wissenschaftlicher Mitarbeiter in einem AfD-Bundestagsbüro und nahm am Potsdamer Treffen vom 25. November 2023 teil. ' +
+            'Dort waren nach Recherchen von CORRECTIV, WDR, NDR und SZ auch der Rechtsextremist Martin Sellner und der persönliche Referent von Alice Weidel anwesend.',
+          nuance:
+            'Ein Netzwerk mit Verbindungen in Fraktion und Parteispitze ist kein Parteitagsbeschluss. Die Partei nannte das Treffen „kein AfD-Termin“ – ' +
+            'erklären muss sie die personellen Verbindungen trotzdem.',
+          sources: [
+            { title: 'Geheimtreffen in Potsdam: AfD-Mitarbeiter brüstet sich mit Gewalt', publisher: 'CORRECTIV', date: '17.01.2024', url: 'https://correctiv.org/aktuelles/neue-rechte/2024/01/17/geheimtreffen-in-potsdam-afd-mitarbeiter-bruestet-sich-mit-gewalt' },
+            { title: 'AfD-Politiker diskutieren offenbar Vertreibungsplan', publisher: 'tagesschau.de', date: '10.01.2024', url: 'https://www.tagesschau.de/inland/innenpolitik/afd-neonazis-geheimtreffen-100.html' },
+            { title: 'Rechtsextremisten berieten mit AfD-Politikern über Massenausweisungen', publisher: 'Deutschlandfunk', date: '11.01.2024', url: 'https://www.deutschlandfunk.de/rechtsextremisten-berieten-mit-afd-politikern-ueber-massenausweisungen-von-menschen-mit-migrationshi-100.html' }
+          ]
         }
       ]
     },
@@ -200,6 +234,21 @@ window.CHECK_DATA = {
             { title: 'Zeit für Deutschland – Programm zur Wahl zum 21. Deutschen Bundestag', publisher: 'AfD-Bundesverband', date: '12.01.2025', url: 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf' },
             { title: 'AfD-Parteitag nimmt Forderung nach „Remigration“ ins Wahlprogramm auf', publisher: 'Stuttgarter Zeitung / dpa', date: '11.01.2025', url: 'https://www.stuttgarter-zeitung.de/politik/bundestagswahl-2025-afd-parteitag-nimmt-forderung-nach-remigration-ins-wahlprogramm-auf-79031156.html' },
             { title: 'Making-Of zur Geheimplan-Recherche (Potsdamer Treffen)', publisher: 'CORRECTIV', date: '10.01.2024', url: 'https://correctiv.org/aktuelles/neue-rechte/2024/01/10/making-of-zur-geheimplan-recherche/' }
+          ]
+        },
+        {
+          id: 'ost-partei',
+          claim: '„Die AfD ist eine ostdeutsche Regionalpartei.“',
+          category: 'widerlegt',
+          verdict:
+            'Falsch. 2025 erreichte die AfD im Osten rund 32 Prozent, im Westen rund 18 Prozent – aber 70 Prozent ihrer Zweitstimmen kamen aus den ' +
+            'alten Bundesländern, weil dort deutlich mehr Menschen wählen. In allen ostdeutschen Flächenländern war sie mit 32,5 bis 38,6 Prozent stärkste Kraft.',
+          nuance:
+            'Der Ost-West-Unterschied ist real, beschreibt aber eine Gewichtung, keine Regionalpartei. Wer die AfD als Ost-Phänomen abtut, rechnet rund ' +
+            '7,2 Millionen westdeutsche Wählerstimmen weg.',
+          sources: [
+            { title: 'Wahlergebnisse und Wählerschaft der AfD', publisher: 'Bundeszentrale für politische Bildung', date: '16.05.2026', url: 'https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/' },
+            { title: 'Bundestagswahl 2025: Endgültiges Ergebnis', publisher: 'Die Bundeswahlleiterin', date: '14.03.2025', url: 'https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html' }
           ]
         }
       ]
@@ -271,6 +320,23 @@ window.CHECK_DATA = {
           sources: [
             { title: 'Bundestagswahl 2025: Endgültiges Ergebnis', publisher: 'Die Bundeswahlleiterin', date: '14.03.2025', url: 'https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html' },
             { title: 'Wahlergebnisse und Wählerschaft der AfD', publisher: 'Bundeszentrale für politische Bildung', date: '16.05.2026', url: 'https://www.bpb.de/themen/parteien/parteien-in-deutschland/afd/273131/wahlergebnisse-und-waehlerschaft-der-afd/' }
+          ]
+        },
+        {
+          id: 'aemter-laender',
+          claim: '„Die AfD wird in Hessen, Thüringen und Sachsen pauschal aus allen Ämtern ausgegrenzt.“',
+          category: 'umstritten',
+          verdict:
+            'Pauschal falsch. In Hessen scheiterten AfD-Kandidaten für das Vizepräsidentenamt mehr als ein Dutzend Mal; in Thüringen verlor die AfD das ' +
+            'Präsidentenamt mit 32 zu 54 Stimmen. In Sachsen sitzt André Wendt dagegen als Zweiter Vizepräsident im Präsidium, und die AfD führt vier Ausschüsse.',
+          nuance:
+            'Ausgrenzung und Mehrheitsentscheidung sind nicht dasselbe: Aus der Geschäftsordnung folgt kein einklagbarer Anspruch auf einen Vize-Posten – ' +
+            'das hat das Bundesverfassungsgericht 2022 entschieden. Politisch umstritten bleibt die Praxis trotzdem.',
+          sources: [
+            { title: 'Hessen: AfD kritisiert Rhein in Brandmauer-Debatte (mehr als ein Dutzend gescheiterte Vize-Kandidaten)', publisher: 'Hessenschau / hr', date: '05.10.2026', url: 'https://www.hessenschau.de/politik/afd-kritisiert-rhein-in-brandmauer-debatte-scharf-verhoehnung-der-waehler-v1,reaktionen-rhein-brandmauer-afd-100.html' },
+            { title: 'Präsidium des Sächsischen Landtags, 8. Wahlperiode (André Wendt, AfD, Zweiter Vizepräsident)', publisher: 'Sächsischer Landtag', date: 'laufend', url: 'https://www.landtag.sachsen.de/de/parlament/praesidium/index.cshtml' },
+            { title: 'Dr. Thadäus König ist neuer Landtagspräsident (54 Stimmen, Muhsal 32)', publisher: 'Thüringer Landtag', date: '28.09.2024', url: 'https://www.thueringer-landtag.de/presse/pressemitteilungen/2024/dr-thadaeus-koenig-ist-neuer-landtagspraesident' },
+            { title: 'Kein AfD-Recht auf Bundestags-Vize (Organklage abgelehnt)', publisher: 'taz / dpa', date: '22.03.2022', url: 'https://taz.de/Entscheidungen-des-Verfassungsgerichts/!5843742' }
           ]
         }
       ]
@@ -363,6 +429,113 @@ window.CHECK_DATA = {
             { title: 'AfD laut Verfassungsschutz gesichert rechtsextremistisch', publisher: 'Deutsche Welle', date: '02.05.2025', url: 'https://www.dw.com/de/afd-laut-verfassungsschutz-gesichert-rechtsextremistisch/a-72413368' },
             { title: 'Grundgesetz, Artikel 21 (Parteien)', publisher: 'Bundesministerium der Justiz', date: '24.05.1949, Fassung laufend', url: 'https://www.gesetze-im-internet.de/gg/art_21.html' },
             { title: 'Bundestagswahl 2025: Endgültiges Ergebnis', publisher: 'Die Bundeswahlleiterin', date: '14.03.2025', url: 'https://www.bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2025/29_25_endgueltiges-ergebnis.html' }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'wirtschaft',
+      title: 'Wirtschaft, Sozialstaat, Klima',
+      intro: 'Der Teil, in dem sich Behauptungen am häufigsten an einer Programmstelle prüfen lassen – und in dem Beleg und Bewertung oft verwechselt werden.',
+      entries: [
+        {
+          id: 'klima-paris',
+          claim: '„Die AfD will aus dem Pariser Klimaabkommen aussteigen und die CO₂-Abgabe abschaffen.“',
+          category: 'belegt',
+          verdict:
+            'Zutreffend. Das Wahlprogramm 2025 fordert den Austritt aus dem Pariser Klimaabkommen, die Abschaffung der CO₂-Abgabe, längere Laufzeiten ' +
+            'für Kohlekraftwerke und die Rückkehr zur Kernkraft. Die Zusammenfassung des RND nennt dieselben Punkte.',
+          nuance:
+            'Belegt ist die Programmforderung, nicht ihre Begründung. Ob der Ausstieg klimapolitisch tragfähig ist, ist eine andere Frage – und eine, die sich ' +
+            'mit Zahlen führen lässt.',
+          sources: [
+            { title: 'Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag', publisher: 'AfD-Bundesverband', date: '12.01.2025', url: 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf' },
+            { title: 'AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte', publisher: 'RND', date: '23.02.2025', url: 'https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html' }
+          ]
+        },
+        {
+          id: 'sozialstaat',
+          claim: '„Die AfD will den Sozialstaat abschaffen.“',
+          category: 'nicht-belegt',
+          verdict:
+            'Nicht belegt. Das Programm beginnt wirtschaftspolitisch mit der sozialen Marktwirtschaft und bekennt sich zur staatlichen Absicherung; eine ' +
+            'Abschaffung der Sozialversicherungen steht dort nicht. Belegt sind dagegen Einschnitte für Ausländer und Ausreisepflichtige: Umbau des Bürgergelds, ' +
+            'Sachleistungen für Asylbewerber, Leistungen auf dem Existenzminimum.',
+          nuance:
+            '„Sozialstaat abschaffen“ ist ein Strohmann. Die belegte Forderung lautet, Leistungen für Nichtdeutsche zu kürzen – eine harte politische Frage, aber ' +
+            'eine andere Aussage.',
+          sources: [
+            { title: 'Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag', publisher: 'AfD-Bundesverband', date: '12.01.2025', url: 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf' },
+            { title: 'AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte', publisher: 'RND', date: '23.02.2025', url: 'https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html' },
+            { title: 'AfD-Wahlprogramm: Vater, Mutter, Kind – und der Ausstieg aus der EU', publisher: 'ZDFheute', date: '12.01.2025', url: 'https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html' }
+          ]
+        },
+        {
+          id: 'sozialpolitik-reiche',
+          claim: '„Die AfD macht Politik für Reiche und gegen kleine Leute.“',
+          category: 'umstritten',
+          verdict:
+            'Zugespitzt, aber nicht aus der Luft. Das Programm will Vermögen- und Erbschaftsteuer abschaffen und verspricht Entlastungen, die der DIW-Forscher ' +
+            'Stefan Bach nach RND-Berechnungen auf 182 Milliarden Euro beziffert – ohne Gegenfinanzierung. Gleichzeitig sollen Sozialleistungen für Ausländer gekürzt werden.',
+          nuance:
+            'Die Richtung der Maßnahmen ist belegbar, das Etikett „für Reiche“ ist eine Bewertung. Wer es benutzt, sollte die Zahl nennen, aus der es folgt.',
+          sources: [
+            { title: 'AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte', publisher: 'RND', date: '23.02.2025', url: 'https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html' },
+            { title: 'Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag', publisher: 'AfD-Bundesverband', date: '12.01.2025', url: 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf' }
+          ]
+        },
+        {
+          id: 'wirtschaft-unfaehig',
+          claim: '„Die AfD ist wirtschaftlich unfähig.“',
+          category: 'umstritten',
+          verdict:
+            'Ein Urteil, kein Messwert. Prüfbar ist etwas anderes: Die versprochenen Entlastungen von 182 Milliarden Euro sind nicht gegenfinanziert, und zugleich ' +
+            'fordert das Programm den Austritt aus EU und Euro. Das ist der Kern des wirtschaftspolitischen Risikos – nicht die Charakterfrage.',
+          nuance:
+            '„Unfähig“ beschreibt Personen, nicht Programme. Die belastbaren Fragen lauten: Wie werden die 182 Milliarden gegenfinanziert, was kostet der Austritt ' +
+            'aus dem Binnenmarkt, welche Übergangsregeln gelten für Schulden, Verträge und Lieferketten?',
+          sources: [
+            { title: 'AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte', publisher: 'RND', date: '23.02.2025', url: 'https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html' },
+            { title: 'Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag', publisher: 'AfD-Bundesverband', date: '12.01.2025', url: 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf' }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'russland',
+      title: 'Russland, NATO, EU',
+      intro: 'Außenpolitik ist der Bereich mit den klarsten Programmaussagen – und den größten Beleglücken bei Vorwürfen über Geld und Motive.',
+      entries: [
+        {
+          id: 'russland-freundlich',
+          claim: '„Die AfD betreibt eine russlandfreundliche Politik.“',
+          category: 'belegt',
+          verdict:
+            'Zutreffend. Das Programm fordert die sofortige Aufhebung der Russland-Sanktionen und die Reparatur von Nord Stream; eine Verurteilung des russischen ' +
+            'Angriffs auf die Ukraine enthält es nicht. Einen Änderungsantrag, der sie aufnehmen sollte, lehnten die Delegierten in Riesa mit 69 Prozent Nichtbefassung ab.',
+          nuance:
+            'Eine Programmlage ist keine Finanzierung. Die russlandfreundliche Position lässt sich aus dem Text belegen, Zahlungen aus Moskau an die Partei nicht – ' +
+            'dafür gibt es einen eigenen Eintrag.',
+          sources: [
+            { title: 'Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag', publisher: 'AfD-Bundesverband', date: '12.01.2025', url: 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf' },
+            { title: 'AfD-Wahlprogramm 2025 als Zusammenfassung: Die wichtigsten Punkte', publisher: 'RND', date: '23.02.2025', url: 'https://www.rnd.de/politik/afd-wahlprogramm-2025-als-zusammenfassung-die-wichtigsten-punkte-5CSVGADJX5HNPFL2OIWYKPUSME.html' },
+            { title: 'AfD-Wahlprogramm: Weidel übernimmt „Remigration“ – kontroverse Russland-Haltung', publisher: 'Frankfurter Rundschau', date: '16.01.2025', url: 'https://www.fr.de/politik/afd-wahlprogramm-weidel-uebernimmt-remigration-kontroverse-russland-haltung-93510171.html' },
+            { title: 'Was zur Außenpolitik in den Wahlprogrammen steht', publisher: 'tagesschau.de', date: '13.02.2025', url: 'https://www.tagesschau.de/inland/bundestagswahl/programmvergleich/wahlprogramme-aussenpolitik-sicherheit-frieden-100.html' }
+          ]
+        },
+        {
+          id: 'nato-eu',
+          claim: '„Die AfD will aus NATO und EU raus.“',
+          category: 'umstritten',
+          verdict:
+            'Halb richtig, halb falsch. Der Austritt aus EU und Euro steht im Programm. Bei der NATO bekennt sich das Programm zur Mitgliedschaft, bis ein ' +
+            'unabhängiges europäisches Militärbündnis aufgebaut ist – ein Austritt steht dort nicht, wird aber von führenden Politikern bezweifelt.',
+          nuance:
+            'Wer beides in einen Satz packt, wird an der NATO-Stelle widerlegt. Sauber ist: EU-Austritt ja, NATO-Austritt nein – jedenfalls nicht im Programm.',
+          sources: [
+            { title: 'Zeit für Deutschland – Programm der AfD zur Wahl zum 21. Deutschen Bundestag', publisher: 'AfD-Bundesverband', date: '12.01.2025', url: 'https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf' },
+            { title: 'AfD-Wahlprogramm: Vater, Mutter, Kind – und der Ausstieg aus der EU', publisher: 'ZDFheute', date: '12.01.2025', url: 'https://www.zdfheute.de/politik/deutschland/afd-parteitag-riesa-wahlprogramm-100.html' },
+            { title: 'Was zur Außenpolitik in den Wahlprogrammen steht', publisher: 'tagesschau.de', date: '13.02.2025', url: 'https://www.tagesschau.de/inland/bundestagswahl/programmvergleich/wahlprogramme-aussenpolitik-sicherheit-frieden-100.html' }
           ]
         }
       ]
