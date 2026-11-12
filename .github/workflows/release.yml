@@ -1,6 +1,7 @@
 name: Release
 
-# Baut bei jedem Tag (v*) den Windows-Installer und hängt ihn an das Release.
+# Baut bei jedem Tag (v*) Windows-Installer, Dossier-APK und Check-APK,
+# hängt alle drei an das Release und veröffentlicht SHA-256-Prüfsummen.
 on:
   push:
     tags:
@@ -56,7 +57,7 @@ jobs:
           fi
           gh release view "$TAG" >/dev/null 2>&1 \
             || gh release create "$TAG" \
-                 --title "AfD-Dossier ${TAG#v}" \
+                 --title "AfD-Dossier & AfD-Check ${TAG#v}" \
                  --generate-notes
           gh release upload "$TAG" "$ARTIFACT" --clobber
 
@@ -103,7 +104,7 @@ jobs:
             echo "Kein Keystore-Secret gesetzt – der Build nutzt die Debug-Signatur."
           fi
 
-      - name: APK bauen
+      - name: Beide APKs bauen
         shell: bash
         working-directory: android
         env:
@@ -115,11 +116,11 @@ jobs:
         run: |
           set -euo pipefail
           chmod +x gradlew
-          ./gradlew --no-daemon assembleRelease \
+          ./gradlew --no-daemon :app:assembleRelease :check:assembleRelease \
             -PdossierVersion="${TAG#v}" \
             -PdossierVersionCode="${{ github.run_number }}"
 
-      - name: APK ans Release hängen
+      - name: APKs ans Release hängen
         shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -127,9 +128,69 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p dist
-          APK="dist/AfD-Dossier-${TAG#v}.apk"
-          cp android/app/build/outputs/apk/release/app-release.apk "$APK"
-          ls -lh "$APK"
+          DOSSIER="dist/AfD-Dossier-${TAG#v}.apk"
+          CHECK="dist/AfD-Check-${TAG#v}.apk"
+          cp android/app/build/outputs/apk/release/app-release.apk "$DOSSIER"
+          cp android/check/build/outputs/apk/release/check-release.apk "$CHECK"
+          ls -lh "$DOSSIER" "$CHECK"
           gh release view "$TAG" >/dev/null 2>&1 \
-            || gh release create "$TAG" --title "AfD-Dossier ${TAG#v}" --generate-notes
-          gh release upload "$TAG" "$APK" --clobber
+            || gh release create "$TAG" --title "AfD-Dossier & AfD-Check ${TAG#v}" --generate-notes
+          gh release upload "$TAG" "$DOSSIER" "$CHECK" --clobber
+
+  checksums:
+    # Läuft zuletzt und kennt damit alle Artefakte des Releases.
+    needs: [installer, android]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Release-Artefakte laden
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          gh release download "$TAG" --dir dist --pattern '*.exe' --pattern '*.apk' --clobber
+          ls -lh dist
+
+      - name: Prüfsummen erzeugen
+        shell: bash
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          cd dist
+          DOSSIER="AfD-Dossier-${TAG#v}"
+          CHECK="AfD-Check-${TAG#v}"
+          for f in "$DOSSIER.exe" "$DOSSIER.apk" "$CHECK.apk"; do
+            if [ ! -f "$f" ]; then
+              echo "Artefakt fehlt im Release: $f"
+              exit 1
+            fi
+          done
+          sha256sum "$DOSSIER.exe" "$DOSSIER.apk" "$CHECK.apk" > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - name: Prüfsummen veröffentlichen
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          gh release upload "$TAG" dist/SHA256SUMS.txt --clobber
+          BODY="$(gh release view "$TAG" --json body -q .body)"
+          # Alten Prüfsummen-Block abschneiden, damit ein erneuter Lauf nichts doppelt anhängt.
+          CLEAN="$(printf '%s\n' "$BODY" | awk '/^## Prüfsummen \(SHA-256\)/{exit} {print}')"
+          {
+            printf '%s\n\n' "$CLEAN"
+            echo '## Prüfsummen (SHA-256)'
+            echo ''
+            echo '```'
+            cat dist/SHA256SUMS.txt
+            echo '```'
+            echo ''
+            echo 'Prüfen mit `sha256sum -c SHA256SUMS.txt` (Linux/macOS) oder `Get-FileHash <datei> -Algorithm SHA256` (Windows).'
+          } > body.md
+          gh release edit "$TAG" --notes-file body.md

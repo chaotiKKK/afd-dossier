@@ -45,8 +45,10 @@ npm run dist            # portable Anwendung: dist/win-unpacked/AfD-Dossier.exe
 npm run dist:installer  # Installer: dist/AfD-Dossier-<version>.exe
 ```
 
-Ein Tag `v*` löst den Workflow `.github/workflows/release.yml` aus: Er baut den Windows-Installer und
-die Android-APK, setzt die Version aus dem Tag und hängt beide Artefakte an das Release.
+Ein Tag `v*` löst den Workflow `.github/workflows/release.yml` aus: Er baut den Windows-Installer,
+die Dossier-APK und die Check-APK, setzt die Version aus dem Tag und hängt alle drei Artefakte
+ans Release. Ein letzter Job lädt sie wieder herunter, erzeugt `SHA256SUMS.txt` und schreibt die
+Prüfsummen zusätzlich in den Release-Text.
 
 ### Android-APK bauen
 
