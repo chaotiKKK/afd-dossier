@@ -46,9 +46,16 @@ jobs:
           TAG: ${{ github.ref_name }}
         run: |
           set -euo pipefail
-          ls -lh dist/*.exe
+          ls -lh dist/*.exe || true
+          # Nur der Installer, nicht der interne NSIS-Hilfsinstaller.
+          ARTIFACT="dist/AfD-Dossier-${TAG#v}.exe"
+          if [ ! -f "$ARTIFACT" ]; then
+            echo "Artefakt fehlt: $ARTIFACT"
+            ls -l dist
+            exit 1
+          fi
           gh release view "$TAG" >/dev/null 2>&1 \
             || gh release create "$TAG" \
                  --title "AfD-Dossier ${TAG#v} (Windows)" \
                  --generate-notes
-          gh release upload "$TAG" dist/*.exe --clobber
+          gh release upload "$TAG" "$ARTIFACT" --clobber
